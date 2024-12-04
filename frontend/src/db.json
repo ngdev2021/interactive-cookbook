@@ -1,0 +1,3794 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Classic Southern Fried Chicken Wings",
+      "description": "Crispy, golden-brown wings with a flavorful seasoning blend, served with truffle hot honey drizzle.",
+      "image": "http://localhost:3000/assets/images/main/classic-fried-wings.png",
+      "prep_time": 20,
+      "cook_time": 30,
+      "total_time": 50,
+      "difficulty": "medium",
+      "difficulty_modifiers": {
+        "time_sensitive_steps": 2,
+        "special_equipment": ["deep fryer", "wire rack"],
+        "precision_required": 3
+      },
+      "servings": 4,
+      "categories": ["dinner", "southern", "fried"],
+      "tags": ["crispy", "comfort food", "holiday", "luxury"],
+      "regional_variations": [
+        {
+          "region": "Deep South",
+          "modifications": [
+            {
+              "description": "Use lard instead of vegetable oil for a traditional Southern flavor."
+            }
+          ]
+        },
+        {
+          "region": "Caribbean",
+          "modifications": [
+            {
+              "description": "Add 1 tsp allspice and a pinch of Scotch bonnet chili powder to the seasoning blend."
+            }
+          ]
+        }
+      ],
+      "inspiration": "This dish brings the soulful traditions of the South to your kitchen, blending classic techniques with modern flavors.",
+      "ingredients": [
+        {
+          "name": "chicken wings",
+          "quantity": 2,
+          "unit": "lbs",
+          "notes": "split into drumettes and flats for even cooking",
+          "sourcing_info": {
+            "origin": "Free-range farm, organic-certified",
+            "sustainable": true
+          }
+        },
+        {
+          "name": "buttermilk",
+          "quantity": 2,
+          "unit": "cups",
+          "substitutions": ["almond milk + 1 tbsp vinegar"],
+          "usage": "marinade",
+          "dietary_restrictions": ["dairy-free substitute available"]
+        },
+        {
+          "name": "all-purpose flour",
+          "quantity": 2,
+          "unit": "cups",
+          "substitutions": ["gluten-free flour"],
+          "usage": "coating"
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": 1,
+          "unit": "tbsp",
+          "notes": "adds smoky depth to the flavor"
+        },
+        { "name": "cayenne pepper", "quantity": 1, "unit": "tsp" },
+        { "name": "salt", "quantity": 2, "unit": "tsp" },
+        {
+          "name": "truffle hot honey",
+          "quantity": 1,
+          "unit": "cup",
+          "optional": true,
+          "usage": "drizzle after frying"
+        }
+      ],
+     "instructions": [
+        {
+          "step": 1,
+          "instruction": "Marinate wings in buttermilk with paprika and cayenne for 4–6 hours. Cover and refrigerate.",
+          "tip": "For a spicier kick, double the cayenne pepper.",
+          "troubleshooting": "If wings are too soggy, pat dry before coating in flour.",
+          "media": {
+            "step_photo": "http://localhost:3000/assets/images/cooking-steps/marinating_chicken.png",
+            "video": "http://localhost:3000/assets/videos/marinate.mp4"
+          },
+          "timer": {
+            "duration": 240,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 2,
+          "instruction": "Mix flour, salt, and spices in a large bowl to create the dry coating.",
+          "tip": "Sift the flour to remove lumps for an even crust."
+        },
+        {
+          "step": 3,
+          "instruction": "Remove wings from marinade, shaking off excess liquid, and coat thoroughly in the flour mixture. Let rest for 10 minutes.",
+          "tip": "Letting the wings rest helps the coating adhere better during frying.",
+          "timer": {
+            "duration": 10,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 4,
+          "instruction": "Heat vegetable oil in a deep fryer or large heavy pot to 350°F.",
+          "equipment_notes": [
+            "Use a thermometer to maintain oil temperature.",
+            "A cast-iron Dutch oven works well for heat retention."
+          ]
+        },
+        {
+          "step": 5,
+          "instruction": "Fry wings in batches for 8–10 minutes, turning occasionally, until golden brown and crispy. Place on a wire rack to drain excess oil.",
+          "tip": "Avoid overcrowding the fryer to maintain oil temperature.",
+          "timer": {
+            "duration": 10,
+            "unit": "minutes",
+            "adjustable": false
+          }
+        },
+        {
+          "step": 6,
+          "instruction": "Drizzle wings with truffle hot honey and garnish with fresh parsley before serving.",
+          "plating_instruction": "Arrange wings in a cast-iron skillet or a rustic wooden board for presentation."
+        }
+      ],
+      "substitutions": {
+        "buttermilk": "almond milk + 1 tbsp vinegar",
+        "flour": "gluten-free flour blend",
+        "truffle hot honey": "hot honey + 1 tsp truffle oil"
+      },
+      "media": {
+        "step_photos": [
+          "http://localhost:3000/assets/images/fried_step1.png",
+          "http://localhost:3000/assets/images/fried_step2.png",
+          "http://localhost:3000/assets/images/fried_step3.png"
+        ],
+        "video": "http://localhost:3000/assets/videos/fried_wings.mp4"
+      },
+      "pairings": {
+        "sides": [
+          {
+            "title": "Buttermilk Biscuits",
+            "description": "Flaky, buttery biscuits that complement the wings' crispiness.",
+            "image": "http://localhost:3000/assets/images/sides/buttermilk_biscuits.png",
+            "ingredients": [
+              {
+                "name": "all-purpose flour",
+                "quantity": 2,
+                "unit": "cups"
+              },
+              {
+                "name": "baking powder",
+                "quantity": 1,
+                "unit": "tbsp"
+              },
+              { "name": "salt", "quantity": 1, "unit": "tsp" },
+              {
+                "name": "butter",
+                "quantity": 6,
+                "unit": "tbsp",
+                "notes": "cold and cubed"
+              },
+              {
+                "name": "buttermilk",
+                "quantity": "3 / 4",
+                "unit": "cup"
+              }
+            ],
+            "instructions": [
+              "Preheat oven to 425°F.",
+              "Mix flour, baking powder, and salt in a bowl.",
+              "Cut in cold butter until the mixture resembles coarse crumbs.",
+              "Add buttermilk and mix until dough forms.",
+              "Roll out dough, cut into circles, and bake for 12–15 minutes."
+            ],
+            "variations": [
+              {
+                "description": "For cheesy biscuits, add 1/2 cup shredded cheddar."
+              }
+            ]
+          }
+        ],
+        "drinks": [
+          {
+            "title": "Bourbon Honey Smash",
+            "description": "A smoky-sweet cocktail that complements the honey drizzle.",
+            "image": "http://localhost:3000/assets/images/drinks/old_fashioned.png",
+            "ingredients": [
+              { "name": "bourbon", "quantity": 2, "unit": "oz" },
+              { "name": "honey syrup", "quantity": 1, "unit": "oz" },
+              { "name": "lemon juice", "quantity": 1, "unit": "oz" },
+              {
+                "name": "mint leaves",
+                "quantity": 5,
+                "unit": "pieces"
+              }
+            ],
+            "instructions": [
+              "Muddle mint with honey syrup and lemon juice.",
+              "Add bourbon and ice, then shake and strain."
+            ]
+          }
+        ]
+      },
+      "compound_recipes": [
+        {
+          "title": "Southern Spice Blend",
+          "description": "A versatile seasoning mix for fried or grilled dishes.",
+          "ingredients": [
+            {
+              "name": "smoked paprika",
+              "quantity": 2,
+              "unit": "tbsp"
+            },
+            {
+              "name": "cayenne pepper",
+              "quantity": 1,
+              "unit": "tsp"
+            },
+            {
+              "name": "garlic powder",
+              "quantity": 1,
+              "unit": "tbsp"
+            },
+            { "name": "onion powder", "quantity": 1, "unit": "tsp" },
+            { "name": "salt", "quantity": 2, "unit": "tsp" }
+          ],
+          "instructions": [
+            "Combine all ingredients and store in an airtight container."
+          ]
+        }
+      ],
+      "nutrition": {
+        "calories_per_serving": 420,
+        "protein": "28g",
+        "carbs": "34g",
+        "fat": "22g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Honey Garlic Grilled Wings",
+      "description": "Juicy grilled wings glazed with a sweet and savory honey garlic sauce.",
+      "image": "http://localhost:3000/assets/images/main/grilled-honey-garlic-wings.png",
+      "prep_time": 15,
+      "cook_time": 25,
+      "total_time": 40,
+      "difficulty": "easy",
+      "difficulty_modifiers": {
+        "time_sensitive_steps": 1,
+        "special_equipment": ["grill"],
+        "precision_required": 2
+      },
+      "servings": 4,
+      "categories": ["dinner", "grilled", "summer"],
+      "tags": ["juicy", "savory", "outdoor cooking"],
+      "regional_variations": [
+        {
+          "region": "Asian Fusion",
+          "modifications": [
+            {
+              "description": "Replace olive oil with sesame oil and add 1 tbsp ginger paste to the marinade."
+            }
+          ]
+        },
+        {
+          "region": "Mediterranean",
+          "modifications": [
+            {
+              "description": "Add 1 tbsp lemon zest and replace soy sauce with balsamic vinegar for a tangy twist."
+            }
+          ]
+        }
+      ],
+      "inspiration": "Inspired by backyard summer BBQs, this recipe balances the sweetness of honey with the bold flavor of garlic.",
+      "ingredients": [
+        {
+          "name": "chicken wings",
+          "quantity": 2,
+          "unit": "lbs",
+          "notes": "keep skin-on for better grilling results",
+          "sourcing_info": {
+            "origin": "Locally sourced, hormone-free",
+            "sustainable": true
+          }
+        },
+        {
+          "name": "honey",
+          "quantity": 1,
+          "unit": "cup",
+          "substitutions": ["agave syrup"]
+        },
+        {
+          "name": "garlic cloves",
+          "quantity": 4,
+          "unit": "minced",
+          "notes": "fresh garlic preferred for robust flavor"
+        },
+        {
+          "name": "soy sauce",
+          "quantity": 1,
+          "unit": "tbsp",
+          "substitutions": ["coconut aminos"]
+        },
+        {
+          "name": "olive oil",
+          "quantity": 2,
+          "unit": "tbsp",
+          "notes": "for grilling marinade"
+        },
+        { "name": "black pepper", "quantity": 1, "unit": "tsp" }
+      ],
+     "instructions": [
+        {
+          "step": 1,
+          "instruction": "Mix honey, garlic, soy sauce, and olive oil in a bowl to create the marinade.",
+          "tip": "Warm the honey slightly to make it easier to mix.",
+          "media": {
+            "step_photo": "http://localhost:3000/assets/images/grilled_step1.png",
+            "video": "http://localhost:3000/assets/videos/grilled_marinade.mp4"
+          }
+        },
+        {
+          "step": 2,
+          "instruction": "Marinate wings for at least 2 hours or overnight for deeper flavor.",
+          "tip": "Use a resealable bag to evenly coat the wings.",
+          "timer": {
+            "duration": 120,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 3,
+          "instruction": "Preheat the grill to medium-high heat and lightly oil the grates to prevent sticking.",
+          "equipment_notes": [
+            "Gas or charcoal grills both work well.",
+            "Use a grill brush to clean the grates before oiling."
+          ]
+        },
+        {
+          "step": 4,
+          "instruction": "Grill wings for 10–12 minutes on each side, basting with leftover marinade halfway through.",
+          "tip": "Watch for flare-ups caused by dripping marinade and move wings to a cooler part of the grill if needed.",
+          "timer": {
+            "duration": 24,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 5,
+          "instruction": "Serve hot with additional sauce on the side.",
+          "plating_instruction": "Arrange wings on a wooden serving board with lime wedges and a drizzle of honey glaze."
+        }
+      ],
+      "substitutions": {
+        "honey": "agave syrup",
+        "soy sauce": "coconut aminos"
+      },
+      "media": {
+        "step_photos": [
+          "http://localhost:3000/assets/images/grilled_step1.png",
+          "http://localhost:3000/assets/images/grilled_step2.png"
+        ],
+        "video": "http://localhost:3000/assets/videos/grilled_wings.mp4"
+      },
+      "pairings": {
+        "sides": [
+          {
+            "title": "Grilled Corn Salad",
+            "description": "A light and tangy salad with charred corn, lime, and cilantro.",
+            "image": "http://localhost:3000/assets/images/sides/corn_salad.png",
+            "ingredients": [
+              { "name": "corn", "quantity": 4, "unit": "ears" },
+              { "name": "lime juice", "quantity": 2, "unit": "tbsp" },
+              {
+                "name": "cilantro",
+                "quantity": 2,
+                "unit": "tbsp",
+                "notes": "chopped"
+              },
+              {
+                "name": "red onion",
+                "quantity": 1,
+                "unit": "medium",
+                "notes": "diced"
+              },
+              {
+                "name": "feta cheese",
+                "quantity": "1 / 2",
+                "unit": "cup",
+                "optional": true
+              }
+            ],
+            "instructions": [
+              "Grill corn until charred, then cut kernels off the cob.",
+              "Mix corn with lime juice, cilantro, red onion, and feta cheese.",
+              "Serve chilled or at room temperature."
+            ]
+          }
+        ],
+        "drinks": [
+          {
+            "title": "Lemon Basil Mojito",
+            "description": "A citrusy cocktail that complements the garlic and honey flavors.",
+            "image": "http://localhost:3000/assets/images/drinks/lemon_basil_mojito.png",
+            "ingredients": [
+              { "name": "white rum", "quantity": 2, "unit": "oz" },
+              { "name": "lemon juice", "quantity": 1, "unit": "oz" },
+              {
+                "name": "basil leaves",
+                "quantity": 5,
+                "unit": "pieces"
+              },
+              { "name": "sugar syrup", "quantity": 1, "unit": "oz" }
+            ],
+            "instructions": [
+              "Muddle basil leaves with lemon juice and sugar syrup.",
+              "Add rum and ice, then shake and strain into a glass."
+            ]
+          }
+        ]
+      },
+      "nutrition": {
+        "calories_per_serving": 380,
+        "protein": "24g",
+        "carbs": "28g",
+        "fat": "18g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Smoked BBQ Wings",
+      "description": "Tender wings slow-smoked to perfection with a smoky BBQ rub and sauce.",
+      "image": "http://localhost:3000/assets/images/main/smoked-bbq-wings.png",
+      "prep_time": 20,
+      "cook_time": 120,
+      "total_time": 140,
+      "difficulty": "medium",
+      "difficulty_modifiers": {
+        "time_sensitive_steps": 1,
+        "special_equipment": ["smoker", "wood chips"],
+        "precision_required": 4
+      },
+      "servings": 4,
+      "categories": ["dinner", "BBQ", "smoked"],
+      "tags": ["smoky", "barbecue", "weekend cooking"],
+      "regional_variations": [
+        {
+          "region": "Texas-Style",
+          "modifications": [
+            {
+              "description": "Add 1 tsp cumin and 1 tbsp chili powder to the rub for a bold Texas flavor."
+            }
+          ]
+        },
+        {
+          "region": "Carolina-Style",
+          "modifications": [
+            {
+              "description": "Replace BBQ sauce with a vinegar-based mop sauce for tangy wings."
+            }
+          ]
+        }
+      ],
+      "inspiration": "A celebration of classic barbecue techniques, this recipe delivers bold smoky flavors perfect for weekend gatherings.",
+      "ingredients": [
+        {
+          "name": "chicken wings",
+          "quantity": 2,
+          "unit": "lbs",
+          "notes": "whole or split into flats and drumettes",
+          "sourcing_info": {
+            "origin": "Farm-raised, antibiotic-free",
+            "sustainable": true
+          }
+        },
+        {
+          "name": "BBQ rub",
+          "quantity": 3,
+          "unit": "tbsp",
+          "notes": "store-bought or homemade"
+        },
+        {
+          "name": "brown sugar",
+          "quantity": 2,
+          "unit": "tbsp",
+          "notes": "for caramelization"
+        },
+        { "name": "paprika", "quantity": 1, "unit": "tbsp" },
+        {
+          "name": "smoked wood chips",
+          "quantity": 1,
+          "unit": "cup",
+          "notes": "soaked in water for 30 minutes"
+        },
+        {
+          "name": "BBQ sauce",
+          "quantity": 1,
+          "unit": "cup",
+          "substitutions": ["Carolina-style vinegar sauce"]
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "instruction": "Rub wings with BBQ rub, brown sugar, and paprika, ensuring even coverage.",
+          "tip": "Pat wings dry before applying the rub to help the spices adhere better.",
+          "media": {
+            "step_photo": "http://localhost:3000/assets/images/smoked_step1.png",
+            "video": "http://localhost:3000/assets/videos/smoked_rub.mp4"
+          }
+        },
+        {
+          "step": 2,
+          "instruction": "Soak wood chips in water for 30 minutes to prevent them from burning too quickly.",
+          "tip": "Use applewood chips for a subtle sweet flavor or hickory for a bolder smoke.",
+          "timer": {
+            "duration": 30,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 3,
+          "instruction": "Preheat smoker to 225°F and place the soaked wood chips in the smoking chamber.",
+          "equipment_notes": [
+            "If using a grill, set up indirect heat with a smoking box for the wood chips."
+          ]
+        },
+        {
+          "step": 4,
+          "instruction": "Arrange wings on the smoker grates and smoke for 2 hours, flipping halfway through for even cooking.",
+          "tip": "Monitor the smoker's temperature and maintain it between 225°F and 250°F.",
+          "timer": {
+            "duration": 120,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 5,
+          "instruction": "Brush wings with BBQ sauce during the last 15 minutes of smoking to create a sticky glaze.",
+          "tip": "Avoid adding sauce too early to prevent burning.",
+          "timer": {
+            "duration": 15,
+            "unit": "minutes",
+            "adjustable": true
+          }
+        },
+        {
+          "step": 6,
+          "instruction": "Serve hot with extra BBQ sauce on the side.",
+          "plating_instruction": "Arrange wings on a rustic wooden platter with small ramekins of extra sauce."
+        }
+      ],
+      "substitutions": {
+        "BBQ sauce": "Carolina-style vinegar sauce",
+        "smoked wood chips": "pecan or cherry wood chips for a different flavor profile"
+      },
+      "media": {
+        "step_photos": [
+          "http://localhost:3000/assets/images/smoked_step1.png",
+          "http://localhost:3000/assets/images/smoked_step2.png"
+        ],
+        "video": "http://localhost:3000/assets/videos/smoked_wings.mp4"
+      },
+      "pairings": {
+        "sides": [
+          {
+            "title": "Creamy Coleslaw",
+            "description": "A tangy and refreshing side that balances the smoky wings.",
+            "image": "http://localhost:3000/assets/images/sides/coleslaw.png",
+            "ingredients": [
+              {
+                "name": "green cabbage",
+                "quantity": 4,
+                "unit": "cups",
+                "notes": "shredded"
+              },
+              {
+                "name": "carrots",
+                "quantity": 1,
+                "unit": "cup",
+                "notes": "shredded"
+              },
+              {
+                "name": "mayonnaise",
+                "quantity": "1 / 2",
+                "unit": "cup"
+              },
+              {
+                "name": "apple cider vinegar",
+                "quantity": 2,
+                "unit": "tbsp"
+              },
+              { "name": "sugar", "quantity": 1, "unit": "tbsp" }
+            ],
+            "instructions": [
+              "Combine cabbage and carrots in a large bowl.",
+              "Whisk together mayonnaise, vinegar, and sugar in a small bowl.",
+              "Pour dressing over the vegetables and toss to coat.",
+              "Refrigerate for at least 1 hour before serving."
+            ]
+          }
+        ],
+        "drinks": [
+          {
+            "title": "Smoky Old Fashioned",
+            "description": "A bold cocktail with a hint of smoke to complement the BBQ flavor.",
+            "image": "http://localhost:3000/assets/images/drinks/old_fashioned.png",
+            "ingredients": [
+              { "name": "bourbon", "quantity": 2, "unit": "oz" },
+              {
+                "name": "sugar cube",
+                "quantity": 1,
+                "unit": "piece"
+              },
+              { "name": "bitters", "quantity": 2, "unit": "dashes" },
+              {
+                "name": "smoke infusion",
+                "quantity": 1,
+                "unit": "cloche",
+                "notes": "optional"
+              }
+            ],
+            "instructions": [
+              "Muddle the sugar cube with bitters in a glass.",
+              "Add bourbon and a large ice cube.",
+              "Infuse with smoke using a smoking cloche for added flavor."
+            ]
+          }
+        ]
+      },
+      "nutrition": {
+        "calories_per_serving": 450,
+        "protein": "26g",
+        "carbs": "35g",
+        "fat": "20g"
+      }
+    },
+   {
+     "id": 4,
+     "title": "Hot Truffle Honey Wings",
+     "description": "Crispy fried chicken wings tossed in a spicy and luxurious truffle hot honey glaze for a bold, flavorful finish.",
+     "image": "http://localhost:3000/assets/images/main/truffle-honey-wings.png",
+     "prep_time": 15,
+     "cook_time": 30,
+     "total_time": 45,
+     "difficulty": "medium",
+     "difficulty_modifiers": {
+       "time_sensitive_steps": 2,
+       "special_equipment": ["deep fryer"],
+       "precision_required": 3
+     },
+     "servings": 4,
+     "categories": ["dinner", "fried", "spicy"],
+     "tags": ["crispy", "luxurious", "bold flavor"],
+     "regional_variations": [
+       {
+         "region": "Asian-Inspired",
+         "modifications": [
+           {
+             "description": "Add 1 tsp ginger paste and 1 tbsp soy sauce to the truffle honey glaze."
+           }
+         ]
+       },
+       {
+         "region": "Mediterranean",
+         "modifications": [
+           {
+             "description": "Use rosemary-infused truffle oil for a fragrant twist."
+           }
+         ]
+       }
+     ],
+     "inspiration": "A luxurious twist on classic fried wings, combining bold spice and the earthy decadence of truffle honey.",
+     "ingredients": [
+       {
+         "name": "chicken wings",
+         "quantity": 2,
+         "unit": "lbs",
+         "notes": "split into flats and drumettes"
+       },
+       {
+         "name": "buttermilk",
+         "quantity": 2,
+         "unit": "cups",
+         "substitutions": ["almond milk + 1 tbsp vinegar"],
+         "usage": "marinade"
+       },
+       {
+         "name": "all-purpose flour",
+         "quantity": 2,
+         "unit": "cups",
+         "substitutions": ["gluten-free flour"],
+         "usage": "coating"
+       },
+       { "name": "cayenne pepper", "quantity": 1, "unit": "tsp" },
+       { "name": "paprika", "quantity": 1, "unit": "tbsp" },
+       { "name": "salt", "quantity": 2, "unit": "tsp" },
+       {
+         "name": "vegetable oil",
+         "quantity": 4,
+         "unit": "cups",
+         "usage": "for frying"
+       },
+       {
+         "name": "truffle hot honey",
+         "quantity": 1,
+         "unit": "cup",
+         "substitutions": ["hot honey + truffle oil"]
+       },
+       {
+         "name": "red pepper flakes",
+         "quantity": 1,
+         "unit": "tsp",
+         "optional": true
+       }
+     ],
+     "instructions": [
+       {
+         "step": 1,
+         "instruction": "Marinate chicken wings in buttermilk with cayenne and paprika for 4 hours or overnight.",
+         "tip": "Longer marination enhances flavor and tenderness.",
+         "media": {
+           "step_photo": "http://localhost:3000/assets/images/truffle_marinate.png"
+         },
+         "timer": {
+           "duration": 240,
+           "unit": "minutes",
+           "adjustable": true
+         }
+       },
+       {
+         "step": 2,
+         "instruction": "Mix flour, salt, and paprika in a bowl for the coating.",
+         "tip": "Sift flour to remove clumps for a more even coating."
+       },
+       {
+         "step": 3,
+         "instruction": "Coat wings in the flour mixture and let rest for 10 minutes before frying.",
+         "tip": "Resting the wings ensures better adhesion of the coating.",
+         "timer": {
+           "duration": 10,
+           "unit": "minutes",
+           "adjustable": true
+         }
+       },
+       {
+         "step": 4,
+         "instruction": "Heat oil to 350°F in a deep fryer or heavy pot.",
+         "equipment_notes": [
+           "Use a thermometer to maintain consistent frying temperature."
+         ]
+       },
+       {
+         "step": 5,
+         "instruction": "Fry wings in batches for 8–10 minutes until golden brown and crispy.",
+         "tip": "Avoid overcrowding the fryer to maintain oil temperature.",
+         "timer": {
+           "duration": 10,
+           "unit": "minutes",
+           "adjustable": false
+         }
+       },
+       {
+         "step": 6,
+         "instruction": "Toss fried wings in warm truffle hot honey and garnish with red pepper flakes if desired.",
+         "plating_instruction": "Serve on a slate platter with microgreens for garnish."
+       }
+     ],
+     "substitutions": {
+       "buttermilk": "almond milk + 1 tbsp vinegar",
+       "truffle hot honey": "hot honey + 1 tsp truffle oil"
+     },
+     "media": {
+       "step_photos": [
+         "http://localhost:3000/assets/images/truffle_step1.png",
+         "http://localhost:3000/assets/images/truffle_step2.png"
+       ],
+       "video": "http://localhost:3000/assets/videos/truffle_wings.mp4"
+     },
+     "pairings": {
+       "sides": [
+         {
+           "title": "Truffle Parmesan Fries",
+           "description": "Crispy fries tossed in Parmesan and truffle oil for a decadent side.",
+           "image": "http://localhost:3000/assets/images/sides/truffle_fries.png",
+           "ingredients": [
+             {
+               "name": "potatoes",
+               "quantity": 4,
+               "unit": "medium",
+               "notes": "cut into thin strips"
+             },
+             {
+               "name": "truffle oil",
+               "quantity": 2,
+               "unit": "tbsp"
+             },
+             {
+               "name": "Parmesan cheese",
+               "quantity": "1 / 2",
+               "unit": "cup",
+               "notes": "grated"
+             },
+             { "name": "salt", "quantity": 1, "unit": "tsp" }
+           ],
+           "instructions": [
+             "Fry potatoes in hot oil until golden and crispy.",
+             "Toss fries with truffle oil, Parmesan, and salt while hot."
+           ]
+         }
+       ],
+       "drinks": [
+         {
+           "title": "Spicy Margarita",
+           "description": "A zesty cocktail with a kick to complement the spicy wings.",
+           "image": "http://localhost:3000/assets/images/drinks/spicy_margarita.png",
+           "ingredients": [
+             { "name": "tequila", "quantity": 2, "unit": "oz" },
+             { "name": "lime juice", "quantity": 1, "unit": "oz" },
+             {
+               "name": "jalapeño slices",
+               "quantity": 3,
+               "unit": "pieces",
+               "optional": true
+             },
+             { "name": "triple sec", "quantity": 1, "unit": "oz" }
+           ],
+           "instructions": [
+             "Shake all ingredients with ice and strain into a salt-rimmed glass."
+           ]
+         }
+       ]
+     },
+     "nutrition": {
+       "calories_per_serving": 440,
+       "protein": "28g",
+       "carbs": "32g",
+       "fat": "22g"
+     }
+   }
+
+  ],
+
+  "sides": [
+    {
+      "id": 1,
+      "title": "Buttermilk Biscuits",
+      "description": "Flaky, buttery biscuits perfect as a side for fried chicken or BBQ dishes.",
+      "image": "http://localhost:3000/assets/images/sides/buttermilk_biscuits.png",
+      "categories": ["bread", "baked", "southern"],
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "quantity": 2,
+          "unit": "cups"
+        },
+        { "name": "baking powder", "quantity": 1, "unit": "tbsp" },
+        { "name": "salt", "quantity": 1, "unit": "tsp" },
+        {
+          "name": "butter",
+          "quantity": 6,
+          "unit": "tbsp",
+          "notes": "cold and cubed"
+        },
+        { "name": "buttermilk", "quantity": "3 / 4", "unit": "cup" }
+      ],
+      "instructions": [
+        "Preheat oven to 425°F.",
+        "Mix flour, baking powder, and salt in a bowl.",
+        "Cut in cold butter until the mixture resembles coarse crumbs.",
+        "Add buttermilk and mix until dough forms.",
+        "Roll out dough, cut into circles, and bake for 12–15 minutes until golden brown."
+      ],
+      "pairings": [
+        "Classic Southern Fried Chicken Wings",
+        "Bourbon BBQ Wings"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Creamy Coleslaw",
+      "description": "A tangy, creamy coleslaw that pairs perfectly with smoky or fried dishes.",
+      "image": "http://localhost:3000/assets/images/sides/coleslaw.png",
+      "categories": ["salad", "cold", "vegetarian"],
+      "ingredients": [
+        {
+          "name": "green cabbage",
+          "quantity": 4,
+          "unit": "cups",
+          "notes": "shredded"
+        },
+        {
+          "name": "carrots",
+          "quantity": 1,
+          "unit": "cup",
+          "notes": "shredded"
+        },
+        { "name": "mayonnaise", "quantity": "1 / 2", "unit": "cup" },
+        {
+          "name": "apple cider vinegar",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        { "name": "sugar", "quantity": 1, "unit": "tbsp" }
+      ],
+      "instructions": [
+        "In a large bowl, combine cabbage and carrots.",
+        "In a small bowl, whisk together mayonnaise, vinegar, and sugar.",
+        "Pour dressing over the vegetables and toss to coat.",
+        "Refrigerate for at least 1 hour before serving."
+      ],
+      "pairings": ["Smoked BBQ Wings", "Cajun Butter Wings"]
+    },
+    {
+      "id": 3,
+      "title": "Truffle Parmesan Fries",
+      "description": "Crispy fries tossed in Parmesan and truffle oil for a decadent side.",
+      "image": "http://localhost:3000/assets/images/sides/truffle_fries.png",
+      "categories": ["fries", "vegetarian", "decadent"],
+      "ingredients": [
+        {
+          "name": "potatoes",
+          "quantity": 4,
+          "unit": "medium",
+          "notes": "cut into thin strips"
+        },
+        { "name": "truffle oil", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "Parmesan cheese",
+          "quantity": "1 / 2",
+          "unit": "cup",
+          "notes": "grated"
+        },
+        { "name": "salt", "quantity": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Fry potatoes in hot oil until golden and crispy.",
+        "Toss fries with truffle oil, Parmesan, and salt while hot."
+      ],
+      "pairings": ["Hot Truffle Honey Wings", "Maple Sriracha Wings"]
+    },
+    {
+      "id": 4,
+      "title": "Kimchi Fried Rice",
+      "description": "A spicy and savory fried rice made with kimchi, sesame oil, and scallions.",
+      "image": "http://localhost:3000/assets/images/sides/kimchi_fried_rice.png",
+      "categories": ["Asian-inspired", "rice dish", "spicy"],
+      "ingredients": [
+        {
+          "name": "cooked rice",
+          "quantity": 2,
+          "unit": "cups",
+          "notes": "preferably day-old"
+        },
+        {
+          "name": "kimchi",
+          "quantity": 1,
+          "unit": "cup",
+          "notes": "chopped"
+        },
+        { "name": "sesame oil", "quantity": 1, "unit": "tbsp" },
+        {
+          "name": "scallions",
+          "quantity": 2,
+          "unit": "pieces",
+          "notes": "sliced"
+        },
+        { "name": "soy sauce", "quantity": 1, "unit": "tbsp" }
+      ],
+      "instructions": [
+        "Heat sesame oil in a wok or skillet over medium-high heat.",
+        "Add chopped kimchi and stir-fry for 2–3 minutes.",
+        "Add rice and soy sauce, mixing well to combine.",
+        "Garnish with scallions before serving."
+      ],
+      "pairings": ["Korean Gochujang Wings"]
+    },
+    {
+      "id": 5,
+      "title": "Sweet Potato Fries",
+      "description": "Crispy and golden fries with a hint of sweetness, perfect for dipping.",
+      "image": "http://localhost:3000/assets/images/sides/sweet_potato_fries.png",
+      "categories": ["vegetarian", "fried", "comfort food"],
+      "ingredients": [
+        {
+          "name": "sweet potatoes",
+          "quantity": 2,
+          "unit": "large",
+          "notes": "cut into strips"
+        },
+        {
+          "name": "cornstarch",
+          "quantity": 1,
+          "unit": "tbsp",
+          "notes": "for crispiness"
+        },
+        {
+          "name": "vegetable oil",
+          "quantity": "as needed",
+          "unit": "for frying"
+        },
+        { "name": "salt", "quantity": "to taste", "unit": "" },
+        {
+          "name": "cinnamon-sugar blend",
+          "quantity": 1,
+          "unit": "tsp",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "Toss sweet potato strips with cornstarch to coat evenly.",
+        "Heat oil in a deep fryer or heavy pot to 350°F.",
+        "Fry sweet potatoes in batches until golden and crispy.",
+        "Drain on a wire rack and season with salt or cinnamon-sugar."
+      ],
+      "pairings": ["Maple Sriracha Wings", "Honey Mustard Wings"]
+    },
+    {
+      "id": 6,
+      "title": "Coconut Shrimp",
+      "description": "Crispy shrimp coated in coconut flakes, served with a tangy dipping sauce.",
+      "image": "http://localhost:3000/assets/images/sides/coconut_shrimp.png",
+      "categories": ["seafood", "fried", "tropical"],
+      "ingredients": [
+        {
+          "name": "shrimp",
+          "quantity": 1,
+          "unit": "lb",
+          "notes": "peeled and deveined"
+        },
+        { "name": "all-purpose flour", "quantity": 1, "unit": "cup" },
+        {
+          "name": "eggs",
+          "quantity": 2,
+          "unit": "large",
+          "notes": "beaten"
+        },
+        { "name": "shredded coconut", "quantity": 1, "unit": "cup" },
+        { "name": "panko breadcrumbs", "quantity": 1, "unit": "cup" }
+      ],
+      "instructions": [
+        "Set up a breading station with flour, eggs, and a coconut-panko mix.",
+        "Coat shrimp in flour, then dip in eggs, and coat with the coconut-panko mixture.",
+        "Fry shrimp in hot oil until golden brown and crispy."
+      ],
+      "pairings": ["Sweet Chili Lime Wings"]
+    },
+    {
+      "id": 7,
+      "title": "Garlic Knots",
+      "description": "Soft, buttery garlic knots made from scratch or pizza dough.",
+      "image": "http://localhost:3000/assets/images/sides/garlic_knots.png",
+      "categories": ["bread", "vegetarian", "buttery"],
+      "ingredients": [
+        {
+          "name": "pizza dough",
+          "quantity": 1,
+          "unit": "lb",
+          "notes": "store-bought or homemade"
+        },
+        {
+          "name": "butter",
+          "quantity": 4,
+          "unit": "tbsp",
+          "notes": "melted"
+        },
+        {
+          "name": "garlic",
+          "quantity": 3,
+          "unit": "cloves",
+          "notes": "minced"
+        },
+        {
+          "name": "parsley",
+          "quantity": 2,
+          "unit": "tbsp",
+          "notes": "chopped"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 400°F.",
+        "Roll out dough and cut into strips, then tie into knots.",
+        "Brush knots with melted butter and garlic, then bake for 10–12 minutes.",
+        "Sprinkle with parsley before serving."
+      ],
+      "pairings": [
+        "Garlic Butter Parmesan Wings",
+        "Buffalo Ranch Wings"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Roasted Brussels Sprouts with Balsamic Glaze",
+      "description": "Charred Brussels sprouts drizzled with sweet and tangy balsamic glaze.",
+      "image": "http://localhost:3000/assets/images/side/roasted_brussels.png",
+      "categories": ["vegetarian", "roasted", "healthy"],
+      "ingredients": [
+        {
+          "name": "Brussels sprouts",
+          "quantity": 2,
+          "unit": "cups",
+          "notes": "halved"
+        },
+        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "balsamic glaze", "quantity": 1, "unit": "tbsp" },
+        { "name": "salt", "quantity": "to taste", "unit": "" },
+        { "name": "black pepper", "quantity": "to taste", "unit": "" }
+      ],
+      "instructions": [
+        "Preheat oven to 425°F.",
+        "Toss Brussels sprouts with olive oil, salt, and pepper.",
+        "Roast for 20–25 minutes until charred and tender.",
+        "Drizzle with balsamic glaze before serving."
+      ],
+      "pairings": ["Smoked Paprika Honey Wings", "Honey Garlic Wings"]
+    },
+    {
+      "id": 9,
+      "title": "Cucumber Mint Salad",
+      "description": "A light, refreshing salad with sliced cucumbers, mint, and a citrusy dressing.",
+      "image": "http://localhost:3000/assets/images/sides/cucumber_mint_salad.png",
+      "categories": ["salad", "light", "vegetarian"],
+      "ingredients": [
+        {
+          "name": "cucumber",
+          "quantity": 2,
+          "unit": "large",
+          "notes": "thinly sliced"
+        },
+        {
+          "name": "mint leaves",
+          "quantity": "1 / 4",
+          "unit": "cup",
+          "notes": "chopped"
+        },
+        {
+          "name": "lemon juice",
+          "quantity": 2,
+          "unit": "tbsp",
+          "notes": "freshly squeezed"
+        },
+        { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "salt", "quantity": "to taste", "unit": "" }
+      ],
+      "instructions": [
+        "Combine sliced cucumbers and chopped mint in a bowl.",
+        "Whisk together lemon juice, olive oil, and salt for the dressing.",
+        "Pour dressing over the salad and toss gently."
+      ],
+      "pairings": ["Thai Peanut Wings", "Sweet Chili Lime Wings"]
+    },
+    {
+      "id": 10,
+      "title": "Loaded Potato Skins",
+      "description": "Crispy potato skins topped with cheddar, bacon, and sour cream.",
+      "image": "http://localhost:3000/assets/images/sides/loaded_potato_skins.png",
+      "categories": ["comfort food", "crispy", "savory"],
+      "ingredients": [
+        { "name": "russet potatoes", "quantity": 4, "unit": "large" },
+        {
+          "name": "cheddar cheese",
+          "quantity": "1 / 2",
+          "unit": "cup",
+          "notes": "shredded"
+        },
+        {
+          "name": "bacon",
+          "quantity": 4,
+          "unit": "slices",
+          "notes": "cooked and crumbled"
+        },
+        { "name": "sour cream", "quantity": "1 / 4", "unit": "cup" },
+        {
+          "name": "green onions",
+          "quantity": 2,
+          "unit": "pieces",
+          "notes": "sliced"
+        }
+      ],
+      "instructions": [
+        "Bake potatoes at 400°F for 50 minutes, then cool slightly.",
+        "Cut potatoes in half and scoop out most of the flesh, leaving a thin layer.",
+        "Brush skins with olive oil, bake until crispy, and top with cheddar and bacon.",
+        "Bake until cheese melts and garnish with sour cream and green onions."
+      ],
+      "pairings": ["Bourbon BBQ Wings", "Buffalo Ranch Wings"]
+    },
+    {
+      "id": 11,
+      "title": "Cornbread Muffins",
+      "description": "Sweet and moist cornbread muffins, perfect for dipping in sauces.",
+      "image": "http://localhost:3000/assets/images/sides/cornbread_muffins.png",
+      "categories": ["baked", "southern", "sweet"],
+      "ingredients": [
+        { "name": "cornmeal", "quantity": 1, "unit": "cup" },
+        { "name": "all-purpose flour", "quantity": 1, "unit": "cup" },
+        { "name": "sugar", "quantity": "1 / 4", "unit": "cup" },
+        { "name": "buttermilk", "quantity": 1, "unit": "cup" },
+        { "name": "eggs", "quantity": 2, "unit": "large" },
+        {
+          "name": "butter",
+          "quantity": "1 / 4",
+          "unit": "cup",
+          "notes": "melted"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 375°F and grease a muffin tin.",
+        "Mix dry ingredients in one bowl and wet ingredients in another.",
+        "Combine both mixtures until smooth, then pour into muffin tins.",
+        "Bake for 15–18 minutes until golden brown."
+      ],
+      "pairings": ["Honey Mustard Wings", "Smoked BBQ Wings"]
+    },
+    {
+      "id": 12,
+      "title": "Mango Salsa",
+      "description": "A vibrant salsa with sweet mango, red onion, and a hint of lime.",
+      "image": "http://localhost:3000/assets/images/sides/mango_salsa.png",
+      "categories": ["salsa", "sweet", "tropical"],
+      "ingredients": [
+        {
+          "name": "mango",
+          "quantity": 2,
+          "unit": "large",
+          "notes": "diced"
+        },
+        {
+          "name": "red onion",
+          "quantity": "1 / 4",
+          "unit": "cup",
+          "notes": "finely diced"
+        },
+        {
+          "name": "cilantro",
+          "quantity": 2,
+          "unit": "tbsp",
+          "notes": "chopped"
+        },
+        { "name": "lime juice", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "jalapeño",
+          "quantity": 1,
+          "unit": "piece",
+          "notes": "seeded and minced"
+        }
+      ],
+      "instructions": [
+        "Combine diced mango, red onion, cilantro, and jalapeño in a bowl.",
+        "Drizzle with lime juice and toss gently to mix."
+      ],
+      "pairings": ["Sweet Chili Lime Wings", "Jamaican Jerk Wings"]
+    },
+    {
+      "id": 13,
+      "title": "Dirty Rice",
+      "description": "A savory rice dish loaded with Cajun spices, ground meat, and vegetables.",
+      "image": "http://localhost:3000/assets/images/sides/dirty_rice.png",
+      "categories": ["rice dish", "Cajun", "spicy"],
+      "ingredients": [
+        { "name": "long-grain rice", "quantity": 1, "unit": "cup" },
+        {
+          "name": "ground sausage",
+          "quantity": "1 / 2",
+          "unit": "lb"
+        },
+        {
+          "name": "green bell pepper",
+          "quantity": "1 / 2",
+          "unit": "cup",
+          "notes": "diced"
+        },
+        {
+          "name": "celery",
+          "quantity": "1 / 4",
+          "unit": "cup",
+          "notes": "diced"
+        },
+        { "name": "Cajun seasoning", "quantity": 1, "unit": "tbsp" }
+      ],
+      "instructions": [
+        "Cook rice according to package instructions and set aside.",
+        "Sauté sausage, bell pepper, and celery in a skillet until browned.",
+        "Add Cajun seasoning and cooked rice, stirring to combine."
+      ],
+      "pairings": ["Cajun Butter Wings", "Bourbon BBQ Wings"]
+    },
+    {
+      "id": 14,
+      "title": "Roasted Sweet Potatoes",
+      "description": "Tender, caramelized sweet potatoes roasted to perfection.",
+      "image": "http://localhost:3000/assets/images/sides/roasted_sweet_potatoes.png",
+      "categories": ["roasted", "vegetarian", "comfort food"],
+      "ingredients": [
+        {
+          "name": "sweet potatoes",
+          "quantity": 2,
+          "unit": "large",
+          "notes": "diced"
+        },
+        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "cinnamon",
+          "quantity": "1 / 2",
+          "unit": "tsp",
+          "optional": true
+        },
+        { "name": "salt", "quantity": "to taste", "unit": "" }
+      ],
+      "instructions": [
+        "Preheat oven to 400°F.",
+        "Toss diced sweet potatoes with olive oil, cinnamon, and salt.",
+        "Spread on a baking sheet and roast for 25–30 minutes until tender."
+      ],
+      "pairings": [
+        "Smoked Paprika Honey Wings",
+        "Maple Sriracha Wings"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Scallion Pancakes",
+      "description": "Crispy, flaky pancakes loaded with scallions, perfect for dipping.",
+      "image": "http://localhost:3000/assets/images/sides/scallion_pancakes.png",
+      "categories": ["bread", "savory", "Asian-inspired"],
+      "ingredients": [
+        {
+          "name": "all-purpose flour",
+          "quantity": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "boiling water",
+          "quantity": "3 / 4",
+          "unit": "cup"
+        },
+        {
+          "name": "scallions",
+          "quantity": 1,
+          "unit": "cup",
+          "notes": "thinly sliced"
+        },
+        { "name": "sesame oil", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "vegetable oil",
+          "quantity": "as needed",
+          "unit": "for frying"
+        }
+      ],
+      "instructions": [
+        "Mix flour with boiling water until dough forms. Knead for 5 minutes and rest for 30 minutes.",
+        "Roll dough into thin circles, brush with sesame oil, and sprinkle scallions. Roll up into a log, then flatten into a pancake.",
+        "Fry in vegetable oil over medium heat until golden and crispy on both sides."
+      ],
+      "pairings": ["Hoisin Five-Spice Wings", "Teriyaki Sesame Wings"]
+    },
+    {
+      "id": 16,
+      "title": "Parmesan Polenta",
+      "description": "Creamy polenta infused with Parmesan, ideal for pairing with bold flavors.",
+      "image": "http://localhost:3000/assets/images/sides/parmesan_polenta.png",
+      "categories": ["comfort food", "vegetarian", "creamy"],
+      "ingredients": [
+        {
+          "name": "polenta",
+          "quantity": 1,
+          "unit": "cup",
+          "notes": "coarse cornmeal"
+        },
+        { "name": "water", "quantity": 4, "unit": "cups" },
+        {
+          "name": "Parmesan cheese",
+          "quantity": "1 / 2",
+          "unit": "cup",
+          "notes": "grated"
+        },
+        { "name": "butter", "quantity": 2, "unit": "tbsp" },
+        { "name": "salt", "quantity": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Bring water to a boil, then slowly whisk in polenta.",
+        "Reduce heat and simmer, stirring often, for 30 minutes until thickened.",
+        "Stir in butter, Parmesan, and salt. Serve warm."
+      ],
+      "pairings": [
+        "Hot Honey Lemon Wings",
+        "Buffalo Blue Cheese Wings"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Steamed Broccolini with Garlic",
+      "description": "Tender broccolini lightly steamed and tossed with garlic-infused olive oil.",
+      "image": "http://localhost:3000/assets/images/sides/steamed_broccolini.png",
+      "categories": ["vegetarian", "light", "healthy"],
+      "ingredients": [
+        {
+          "name": "broccolini",
+          "quantity": 1,
+          "unit": "lb",
+          "notes": "trimmed"
+        },
+        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "garlic",
+          "quantity": 2,
+          "unit": "cloves",
+          "notes": "thinly sliced"
+        },
+        { "name": "lemon juice", "quantity": 1, "unit": "tbsp" },
+        { "name": "salt", "quantity": "to taste", "unit": "" }
+      ],
+      "instructions": [
+        "Steam broccolini in a steamer basket for 5–7 minutes until tender.",
+        "Heat olive oil in a skillet and sauté garlic until fragrant.",
+        "Toss steamed broccolini with garlic oil, lemon juice, and salt before serving."
+      ],
+      "pairings": ["Hot Truffle Honey Wings", "Honey Garlic Wings"]
+    },
+    {
+      "id": 18,
+      "title": "Egg Rolls",
+      "description": "Crispy egg rolls stuffed with a savory vegetable mix, perfect for dipping.",
+      "image": "http://localhost:3000/assets/images/sides/egg_rolls.png",
+      "categories": ["fried", "crispy", "Asian-inspired"],
+      "ingredients": [
+        {
+          "name": "egg roll wrappers",
+          "quantity": 12,
+          "unit": "pieces"
+        },
+        {
+          "name": "cabbage",
+          "quantity": 2,
+          "unit": "cups",
+          "notes": "shredded"
+        },
+        {
+          "name": "carrots",
+          "quantity": 1,
+          "unit": "cup",
+          "notes": "shredded"
+        },
+        { "name": "soy sauce", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "vegetable oil",
+          "quantity": "as needed",
+          "unit": "for frying"
+        }
+      ],
+      "instructions": [
+        "Mix shredded cabbage, carrots, and soy sauce in a bowl.",
+        "Place filling on each egg roll wrapper, fold tightly, and seal edges with water.",
+        "Fry in hot oil until golden brown and crispy. Serve with sweet chili sauce."
+      ],
+      "pairings": ["Sweet & Sour Wings", "Teriyaki Sesame Wings"]
+    },
+    {
+      "id": 19,
+      "title": "Garlic Mashed Potatoes",
+      "description": "Creamy mashed potatoes with roasted garlic for added depth of flavor.",
+      "image": "http://localhost:3000/assets/images/sides/garlic_mashed_potatoes.png",
+      "categories": ["comfort food", "creamy", "vegetarian"],
+      "ingredients": [
+        {
+          "name": "russet potatoes",
+          "quantity": 4,
+          "unit": "large",
+          "notes": "peeled and cubed"
+        },
+        {
+          "name": "roasted garlic",
+          "quantity": 4,
+          "unit": "cloves",
+          "notes": "mashed"
+        },
+        { "name": "butter", "quantity": 4, "unit": "tbsp" },
+        { "name": "milk", "quantity": "1 / 2", "unit": "cup" },
+        { "name": "salt", "quantity": "to taste", "unit": "" }
+      ],
+      "instructions": [
+        "Boil potatoes in salted water until tender, then drain.",
+        "Mash potatoes with roasted garlic, butter, and milk until creamy.",
+        "Season with salt and serve warm."
+      ],
+      "pairings": ["Buffalo Ranch Wings", "Lemon Pepper Wet Wings"]
+    },
+    {
+      "id": 20,
+      "title": "Herbed Rice Pilaf",
+      "description": "Fluffy rice cooked with aromatic herbs and spices, a versatile side.",
+      "image": "http://localhost:3000/assets/images/sides/herbed_rice_pilaf.png",
+      "categories": ["rice dish", "aromatic", "light"],
+      "ingredients": [
+        { "name": "long-grain rice", "quantity": 1, "unit": "cup" },
+        {
+          "name": "chicken broth",
+          "quantity": 2,
+          "unit": "cups",
+          "notes": "or vegetable broth"
+        },
+        { "name": "butter", "quantity": 2, "unit": "tbsp" },
+        {
+          "name": "onion",
+          "quantity": "1 / 4",
+          "unit": "cup",
+          "notes": "diced"
+        },
+        {
+          "name": "parsley",
+          "quantity": 2,
+          "unit": "tbsp",
+          "notes": "chopped"
+        }
+      ],
+      "instructions": [
+        "Sauté diced onion in butter until translucent.",
+        "Add rice and toast for 2–3 minutes, then pour in broth.",
+        "Simmer covered until rice is cooked and fluffy, about 20 minutes.",
+        "Stir in parsley before serving."
+      ],
+      "pairings": ["Tandoori Wings", "Hoisin Five-Spice Wings"]
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "title": "Bourbon Honey Smash",
+      "description": "A smoky-sweet cocktail with fresh mint and honey syrup, perfect for fried or smoky dishes.",
+      "image": "http://localhost:3000/assets/images/drinks/bourbon_honey_smash.png",
+      "categories": ["cocktail", "bourbon", "smoky"],
+      "ingredients": [
+        { "name": "bourbon", "quantity": 2, "unit": "oz" },
+        { "name": "honey syrup", "quantity": 1, "unit": "oz", "notes": "equal parts honey and water" },
+        { "name": "lemon juice", "quantity": 1, "unit": "oz", "notes": "freshly squeezed" },
+        { "name": "mint leaves", "quantity": 5, "unit": "pieces" }
+      ],
+      "instructions": [
+        "Muddle mint with honey syrup and lemon juice in a shaker.",
+        "Add bourbon and ice, then shake well.",
+        "Strain into a rocks glass over fresh ice and garnish with a mint sprig."
+      ],
+      "alcohol_content": "Moderate",
+      "pairings": ["Classic Southern Fried Chicken Wings", "Bourbon BBQ Wings"]
+    },
+    {
+      "id": 2,
+      "title": "Spicy Margarita",
+      "description": "A zesty margarita with a kick, featuring jalapeño and fresh lime.",
+      "image": "http://localhost:3000/assets/images/drinks/spicy_margarita.png",
+      "categories": ["cocktail", "tequila", "spicy"],
+      "ingredients": [
+        { "name": "tequila", "quantity": 2, "unit": "oz" },
+        { "name": "lime juice", "quantity": 1, "unit": "oz", "notes": "freshly squeezed" },
+        { "name": "triple sec", "quantity": 1, "unit": "oz" },
+        { "name": "jalapeño slices", "quantity": 3, "unit": "pieces", "optional": true },
+        { "name": "simple syrup", "quantity": 1, "unit": "oz" }
+      ],
+      "instructions": [
+        "Muddle jalapeño slices with lime juice in a shaker.",
+        "Add tequila, triple sec, simple syrup, and ice, then shake well.",
+        "Strain into a salt-rimmed glass and garnish with a lime wedge."
+      ],
+      "alcohol_content": "High",
+      "pairings": ["Hot Truffle Honey Wings", "Cajun Butter Wings"]
+    },
+    {
+      "id": 3,
+      "title": "Lemon Basil Mojito",
+      "description": "A refreshing twist on the classic mojito, with basil and lemon juice.",
+      "image": "http://localhost:3000/assets/images/drinks/lemon_basil_mojito.png",
+      "categories": ["cocktail", "rum", "refreshing"],
+      "ingredients": [
+        { "name": "white rum", "quantity": 2, "unit": "oz" },
+        { "name": "lemon juice", "quantity": 1, "unit": "oz" },
+        { "name": "basil leaves", "quantity": 6, "unit": "pieces" },
+        { "name": "sugar syrup", "quantity": 1, "unit": "oz" },
+        { "name": "club soda", "quantity": 3, "unit": "oz", "notes": "to top" }
+      ],
+      "instructions": [
+        "Muddle basil leaves with sugar syrup and lemon juice in a shaker.",
+        "Add rum and ice, then shake and strain into a highball glass over ice.",
+        "Top with club soda and garnish with a basil sprig."
+      ],
+      "alcohol_content": "Light",
+      "pairings": ["Honey Garlic Grilled Wings", "Thai Peanut Wings"]
+    },
+    {
+      "id": 4,
+      "title": "Classic Sweet Tea",
+      "description": "A Southern staple—sweet and refreshing black tea.",
+      "image": "http://localhost:3000/assets/images/drinks/sweet_tea.png",
+      "categories": ["non-alcoholic", "southern", "refreshing"],
+      "ingredients": [
+        { "name": "black tea bags", "quantity": 6, "unit": "pieces" },
+        { "name": "water", "quantity": 4, "unit": "cups" },
+        { "name": "sugar", "quantity": "1 / 2", "unit": "cup", "notes": "or to taste" },
+        { "name": "lemon slices", "quantity": "as needed", "unit": "", "optional": true }
+      ],
+      "instructions": [
+        "Steep tea bags in boiling water for 5 minutes.",
+        "Remove tea bags and stir in sugar while the tea is hot.",
+        "Let cool, then serve over ice with optional lemon slices."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": ["Smoked BBQ Wings", "Bourbon BBQ Wings"]
+    },
+    {
+      "id": 5,
+      "title": "Dark Rum Punch",
+      "description": "A tropical cocktail with dark rum, pineapple juice, and lime.",
+      "image": "http://localhost:3000/assets/images/drinks/rum_punch.png",
+      "categories": ["cocktail", "tropical", "Caribbean"],
+      "ingredients": [
+        { "name": "dark rum", "quantity": 2, "unit": "oz" },
+        { "name": "pineapple juice", "quantity": 3, "unit": "oz" },
+        { "name": "lime juice", "quantity": 1, "unit": "oz" },
+        { "name": "grenadine", "quantity": "1 / 2", "unit": "oz" }
+      ],
+      "instructions": [
+        "Combine rum, pineapple juice, lime juice, and grenadine in a shaker with ice.",
+        "Shake well and strain into a glass filled with ice.",
+        "Garnish with a cherry and a pineapple wedge."
+      ],
+      "alcohol_content": "Moderate",
+      "pairings": ["Jamaican Jerk Wings", "Sweet Chili Lime Wings"]
+    },
+    {
+      "id": 6,
+      "title": "Thai Iced Tea",
+      "description": "A creamy, sweet iced tea made with Thai spices and condensed milk.",
+      "image": "http://localhost:3000/assets/images/drinks/thai_iced_tea.png",
+      "categories": ["non-alcoholic", "refreshing", "sweet"],
+      "ingredients": [
+        { "name": "Thai tea mix", "quantity": 3, "unit": "tbsp" },
+        { "name": "water", "quantity": 2, "unit": "cups" },
+        { "name": "sweetened condensed milk", "quantity": 2, "unit": "tbsp" },
+        { "name": "sugar", "quantity": 1, "unit": "tbsp", "optional": true }
+      ],
+      "instructions": [
+        "Steep Thai tea mix in boiling water for 5 minutes.",
+        "Strain and stir in condensed milk and sugar while hot.",
+        "Serve over ice."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": ["Thai Peanut Wings", "Hoisin Five-Spice Wings"]
+    },
+    {
+      "id": 7,
+      "title": "Soju Mule",
+      "description": "A refreshing cocktail made with soju, lime, and ginger beer.",
+      "image": "http://localhost:3000/assets/images/drinks/soju_mule.png",
+      "categories": ["cocktail", "refreshing", "Asian-inspired"],
+      "ingredients": [
+        { "name": "soju", "quantity": 2, "unit": "oz" },
+        { "name": "lime juice", "quantity": 1, "unit": "oz", "notes": "freshly squeezed" },
+        { "name": "ginger beer", "quantity": 4, "unit": "oz" },
+        { "name": "lime wedge", "quantity": 1, "unit": "piece", "notes": "for garnish" }
+      ],
+      "instructions": [
+        "Fill a copper mug with ice.",
+        "Add soju and lime juice, then top with ginger beer.",
+        "Stir gently and garnish with a lime wedge."
+      ],
+      "alcohol_content": "Light",
+      "pairings": ["Korean Gochujang Wings", "Sweet Chili Lime Wings"]
+    },
+    {
+      "id": 8,
+      "title": "Sparkling Lemonade",
+      "description": "A refreshing non-alcoholic drink with a hint of fizz, perfect for balancing spicy wings.",
+      "image": "http://localhost:3000/assets/images/drinks/sparkling_lemonade.png",
+      "categories": ["non-alcoholic", "refreshing", "citrus"],
+      "ingredients": [
+        {
+          "name": "lemon juice",
+          "quantity": "1 / 2",
+          "unit": "cup",
+          "notes": "freshly squeezed"
+        },
+        { "name": "sugar", "quantity": "1 / 4", "unit": "cup" },
+        { "name": "sparkling water", "quantity": 3, "unit": "cups" },
+        {
+          "name": "mint leaves",
+          "quantity": "as needed",
+          "unit": "",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "Mix lemon juice and sugar in a pitcher until sugar dissolves.",
+        "Add sparkling water and stir gently.",
+        "Serve over ice and garnish with mint leaves, if desired."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": ["Hot Truffle Honey Wings", "Honey Garlic Wings"]
+    },
+    {
+      "id": 9,
+      "title": "Old Fashioned",
+      "description": "A classic bourbon cocktail with a smoky twist to complement BBQ flavors.",
+      "image": "http://localhost:3000/assets/images/drinks/old_fashioned.png",
+      "categories": ["cocktail", "bourbon", "smoky"],
+      "ingredients": [
+        { "name": "bourbon", "quantity": 2, "unit": "oz" },
+        { "name": "sugar cube", "quantity": 1, "unit": "piece" },
+        {
+          "name": "Angostura bitters",
+          "quantity": 2,
+          "unit": "dashes"
+        },
+        {
+          "name": "orange peel",
+          "quantity": 1,
+          "unit": "piece",
+          "notes": "for garnish"
+        },
+        {
+          "name": "smoked wood chips",
+          "quantity": 1,
+          "unit": "pinch",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "Place the sugar cube in a rocks glass and saturate with bitters.",
+        "Add a splash of water and muddle until the sugar dissolves.",
+        "Add bourbon and ice, then stir gently.",
+        "If using, smoke the glass with wood chips before pouring. Garnish with orange peel."
+      ],
+      "alcohol_content": "High",
+      "pairings": ["Smoked BBQ Wings", "Bourbon BBQ Wings"]
+    },
+    {
+      "id": 10,
+      "title": "Hibiscus Iced Tea",
+      "description": "A vibrant, tangy iced tea made from hibiscus petals, naturally caffeine-free.",
+      "image": "http://localhost:3000/assets/images/drinks/hibiscus_iced_tea.png",
+      "categories": ["non-alcoholic", "refreshing", "herbal"],
+      "ingredients": [
+        {
+          "name": "dried hibiscus petals",
+          "quantity": "1 / 4",
+          "unit": "cup"
+        },
+        { "name": "water", "quantity": 4, "unit": "cups" },
+        {
+          "name": "honey",
+          "quantity": 2,
+          "unit": "tbsp",
+          "optional": true
+        },
+        {
+          "name": "lime slices",
+          "quantity": "as needed",
+          "unit": "",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "Steep hibiscus petals in boiling water for 5 minutes.",
+        "Strain and let cool. Sweeten with honey if desired.",
+        "Serve over ice with lime slices."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": [
+        "Smoked Paprika Honey Wings",
+        "Sweet Chili Lime Wings"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Mint Julep",
+      "description": "A Southern classic made with bourbon, fresh mint, and sugar.",
+      "image": "http://localhost:3000/assets/images/drinks/mint_julep.png",
+      "categories": ["cocktail", "bourbon", "classic"],
+      "ingredients": [
+        { "name": "bourbon", "quantity": 2.5, "unit": "oz" },
+        { "name": "mint leaves", "quantity": 6, "unit": "pieces" },
+        { "name": "sugar", "quantity": 1, "unit": "tsp" },
+        { "name": "crushed ice", "quantity": "as needed", "unit": "" }
+      ],
+      "instructions": [
+        "Muddle mint leaves and sugar in a julep cup or rocks glass.",
+        "Fill the glass with crushed ice, then add bourbon.",
+        "Stir gently and garnish with a mint sprig."
+      ],
+      "alcohol_content": "Moderate",
+      "pairings": ["Cajun Butter Wings", "Honey Mustard Wings"]
+    },
+    {
+      "id": 12,
+      "title": "Pineapple Mojito Mocktail",
+      "description": "A non-alcoholic mojito with sweet pineapple and fresh mint.",
+      "image": "http://localhost:3000/assets/images/drinks/pineapple_mojito_mocktail.png",
+      "categories": ["non-alcoholic", "tropical", "refreshing"],
+      "ingredients": [
+        { "name": "pineapple juice", "quantity": 3, "unit": "oz" },
+        {
+          "name": "lime juice",
+          "quantity": 1,
+          "unit": "oz",
+          "notes": "freshly squeezed"
+        },
+        { "name": "mint leaves", "quantity": 5, "unit": "pieces" },
+        {
+          "name": "club soda",
+          "quantity": 3,
+          "unit": "oz",
+          "notes": "to top"
+        }
+      ],
+      "instructions": [
+        "Muddle mint leaves with lime juice in a glass.",
+        "Add pineapple juice and ice, then stir well.",
+        "Top with club soda and garnish with a mint sprig."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": ["Jamaican Jerk Wings", "Sweet Chili Lime Wings"]
+    },
+    {
+      "id": 13,
+      "title": "Ranch Bloody Mary",
+      "description": "A bold Bloody Mary with a ranch twist to pair with rich, spicy wings.",
+      "image": "http://localhost:3000/assets/images/drinks/ranch_bloody_mary.png",
+      "categories": ["cocktail", "savory", "spicy"],
+      "ingredients": [
+        { "name": "vodka", "quantity": 2, "unit": "oz" },
+        { "name": "tomato juice", "quantity": 4, "unit": "oz" },
+        { "name": "ranch seasoning", "quantity": 1, "unit": "tsp" },
+        { "name": "hot sauce", "quantity": "to taste", "unit": "" },
+        {
+          "name": "celery stalk",
+          "quantity": 1,
+          "unit": "piece",
+          "notes": "for garnish"
+        }
+      ],
+      "instructions": [
+        "Mix vodka, tomato juice, ranch seasoning, and hot sauce in a shaker.",
+        "Pour into a glass over ice and garnish with a celery stalk."
+      ],
+      "alcohol_content": "Moderate",
+      "pairings": [
+        "Buffalo Ranch Wings",
+        "Classic Southern Fried Wings"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Mai Tai",
+      "description": "A classic tropical cocktail with rum and almond syrup.",
+      "image": "http://localhost:3000/assets/images/drinks/mai_tai.png",
+      "categories": ["cocktail", "tropical", "rum"],
+      "ingredients": [
+        { "name": "dark rum", "quantity": 1.5, "unit": "oz" },
+        { "name": "orange curaçao", "quantity": 0.5, "unit": "oz" },
+        { "name": "orgeat syrup", "quantity": 0.25, "unit": "oz" },
+        {
+          "name": "lime juice",
+          "quantity": 1,
+          "unit": "oz",
+          "notes": "freshly squeezed"
+        }
+      ],
+      "instructions": [
+        "Shake all ingredients with ice and strain into a glass over fresh ice.",
+        "Garnish with a lime wheel and mint sprig."
+      ],
+      "alcohol_content": "High",
+      "pairings": ["Sweet & Sour Wings", "Jamaican Jerk Wings"]
+    },
+    {
+      "id": 15,
+      "title": "Elderflower Spritz",
+      "description": "A light and floral sparkling drink with elderflower liqueur and prosecco.",
+      "image": "http://localhost:3000/assets/images/drinks/elderflower_spritz.png",
+      "categories": ["cocktail", "floral", "sparkling"],
+      "ingredients": [
+        {
+          "name": "elderflower liqueur",
+          "quantity": 1,
+          "unit": "oz"
+        },
+        { "name": "prosecco", "quantity": 3, "unit": "oz" },
+        { "name": "soda water", "quantity": 1, "unit": "oz" },
+        {
+          "name": "lemon peel",
+          "quantity": 1,
+          "unit": "piece",
+          "notes": "for garnish"
+        }
+      ],
+      "instructions": [
+        "Pour elderflower liqueur into a glass over ice.",
+        "Top with prosecco and soda water, then gently stir.",
+        "Garnish with a twist of lemon peel."
+      ],
+      "alcohol_content": "Light",
+      "pairings": [
+        "Lemon Pepper Wet Wings",
+        "Garlic Butter Parmesan Wings"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Ginger Peach Fizz",
+      "description": "A sparkling, fruity drink with the warmth of ginger and sweetness of ripe peaches.",
+      "image": "http://localhost:3000/assets/images/drinks/ginger_peach_fizz.png",
+      "categories": ["non-alcoholic", "sparkling", "fruity"],
+      "ingredients": [
+        { "name": "peach nectar", "quantity": 3, "unit": "oz" },
+        { "name": "ginger ale", "quantity": 4, "unit": "oz" },
+        {
+          "name": "lime juice",
+          "quantity": 1,
+          "unit": "tsp",
+          "notes": "freshly squeezed"
+        },
+        {
+          "name": "peach slices",
+          "quantity": "for garnish",
+          "unit": ""
+        }
+      ],
+      "instructions": [
+        "Combine peach nectar and lime juice in a glass filled with ice.",
+        "Top with ginger ale and stir gently.",
+        "Garnish with a slice of fresh peach."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": ["Honey Garlic Wings", "Sweet Chili Lime Wings"]
+    },
+    {
+      "id": 17,
+      "title": "Cucumber Cooler",
+      "description": "A light, hydrating mocktail with cucumber, mint, and lime.",
+      "image": "http://localhost:3000/assets/images/drinks/cucumber_cooler.png",
+      "categories": ["non-alcoholic", "refreshing", "light"],
+      "ingredients": [
+        {
+          "name": "cucumber",
+          "quantity": "1 / 2",
+          "unit": "piece",
+          "notes": "thinly sliced"
+        },
+        { "name": "mint leaves", "quantity": 6, "unit": "pieces" },
+        {
+          "name": "lime juice",
+          "quantity": 1,
+          "unit": "oz",
+          "notes": "freshly squeezed"
+        },
+        { "name": "club soda", "quantity": 4, "unit": "oz" },
+        {
+          "name": "simple syrup",
+          "quantity": 1,
+          "unit": "tsp",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "Muddle cucumber slices and mint leaves with lime juice in a glass.",
+        "Add ice and simple syrup, if using, then top with club soda.",
+        "Garnish with a cucumber slice and mint sprig."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": [
+        "Garlic Butter Parmesan Wings",
+        "Lemon Pepper Wet Wings"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Tamarind Rum Punch",
+      "description": "A bold Caribbean-inspired cocktail with tamarind, lime, and dark rum.",
+      "image": "http://localhost:3000/assets/images/drinks/tamarind_rum_punch.png",
+      "categories": ["cocktail", "Caribbean", "bold"],
+      "ingredients": [
+        { "name": "tamarind paste", "quantity": 1, "unit": "tbsp" },
+        { "name": "water", "quantity": 3, "unit": "oz" },
+        { "name": "dark rum", "quantity": 2, "unit": "oz" },
+        { "name": "lime juice", "quantity": 1, "unit": "oz" },
+        {
+          "name": "brown sugar",
+          "quantity": 1,
+          "unit": "tsp",
+          "notes": "to taste"
+        }
+      ],
+      "instructions": [
+        "Dissolve tamarind paste and brown sugar in water.",
+        "Add rum and lime juice, then stir well.",
+        "Serve over ice and garnish with a lime wedge."
+      ],
+      "alcohol_content": "Moderate",
+      "pairings": ["Jamaican Jerk Wings", "Smoked BBQ Wings"]
+    },
+    {
+      "id": 19,
+      "title": "Apple Cinnamon Spritzer",
+      "description": "A cozy fall-inspired mocktail with crisp apple and warm cinnamon flavors.",
+      "image": "http://localhost:3000/assets/images/drinks/apple_cinnamon_spritzer.png",
+      "categories": ["non-alcoholic", "fall", "spiced"],
+      "ingredients": [
+        { "name": "apple cider", "quantity": 3, "unit": "oz" },
+        { "name": "sparkling water", "quantity": 3, "unit": "oz" },
+        {
+          "name": "cinnamon stick",
+          "quantity": 1,
+          "unit": "piece",
+          "notes": "for garnish"
+        },
+        {
+          "name": "apple slices",
+          "quantity": "for garnish",
+          "unit": ""
+        }
+      ],
+      "instructions": [
+        "Combine apple cider and sparkling water in a glass filled with ice.",
+        "Stir gently and garnish with a cinnamon stick and apple slices."
+      ],
+      "alcohol_content": "Non-Alcoholic",
+      "pairings": ["Maple Sriracha Wings", "Hot Honey Lemon Wings"]
+    },
+    {
+      "id": 20,
+      "title": "Berry Sangria",
+      "description": "A fruity sangria loaded with fresh berries and red wine.",
+      "image": "http://localhost:3000/assets/images/drinks/berry_sangria.png",
+      "categories": ["cocktail", "fruity", "wine"],
+      "ingredients": [
+        { "name": "red wine", "quantity": 4, "unit": "oz" },
+        { "name": "orange juice", "quantity": 2, "unit": "oz" },
+        {
+          "name": "mixed berries",
+          "quantity": "1 / 2",
+          "unit": "cup",
+          "notes": "strawberries, raspberries, blueberries"
+        },
+        {
+          "name": "club soda",
+          "quantity": 2,
+          "unit": "oz",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "Combine red wine, orange juice, and mixed berries in a pitcher.",
+        "Refrigerate for at least 1 hour to allow flavors to meld.",
+        "Serve over ice and top with club soda if desired."
+      ],
+      "alcohol_content": "Moderate",
+      "pairings": ["Sweet & Sour Wings", "Hot Truffle Honey Wings"]
+    }
+  ],
+  "sauces": [
+    {
+      "id": 1,
+      "title": "Truffle Hot Honey Sauce",
+      "description": "A luxurious sweet and spicy glaze with the earthy aroma of truffles.",
+      "image": "http://localhost:3000/assets/images/sauces/truffle_hot_honey_sauce.png",
+      "categories": ["sweet", "spicy", "luxurious"],
+      "ingredients": [
+        {
+          "name": "honey",
+          "quantity": "1",
+          "value": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "hot sauce",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "truffle oil",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Warm honey in a small saucepan over low heat.",
+        "Stir in hot sauce, truffle oil, and cayenne pepper until well combined.",
+        "Remove from heat and let cool slightly before using."
+      ],
+      "pairings": ["Hot Truffle Honey Wings", "Sweet Potato Fries"]
+    },
+    {
+      "id": 2,
+      "title": "Bourbon BBQ Sauce",
+      "description": "A smoky and sweet BBQ sauce with a bold bourbon kick.",
+      "image": "http://localhost:3000/assets/images/sauces/bourbon_bbq_sauce.png",
+      "categories": ["BBQ", "smoky", "bold"],
+      "ingredients": [
+        {
+          "name": "ketchup",
+          "quantity": "1",
+          "value": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "bourbon",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "brown sugar",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "Worcestershire sauce",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a saucepan over medium heat.",
+        "Simmer for 10–15 minutes, stirring occasionally, until thickened.",
+        "Cool slightly and use as a glaze or dipping sauce."
+      ],
+      "pairings": ["Smoked BBQ Wings", "Truffle Parmesan Fries"]
+    },
+    {
+      "id": 3,
+      "title": "Garlic Parmesan Butter Sauce",
+      "description": "A rich, creamy sauce with bold garlic and Parmesan flavors.",
+      "image": "http://localhost:3000/assets/images/sauces/garlic_parmesan_butter_sauce.png",
+      "categories": ["creamy", "garlicky", "cheesy"],
+      "ingredients": [
+        {
+          "name": "unsalted butter",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "Parmesan cheese",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Italian seasoning",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Melt butter in a saucepan over low heat.",
+        "Stir in Parmesan cheese, garlic powder, and Italian seasoning until smooth.",
+        "Use as a drizzle or dip for wings."
+      ],
+      "pairings": [
+        "Garlic Butter Parmesan Wings",
+        "Buttermilk Biscuits"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Maple Sriracha Sauce",
+      "description": "Sweet maple syrup meets fiery sriracha for a balanced glaze.",
+      "image": "http://localhost:3000/assets/images/sauces/maple_sriracha_sauce.png",
+      "categories": ["sweet", "spicy", "bold"],
+      "ingredients": [
+        {
+          "name": "maple syrup",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "sriracha",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "rice vinegar",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a small saucepan over low heat.",
+        "Stir until smooth and heated through.",
+        "Toss with wings for a sticky finish."
+      ],
+      "pairings": ["Maple Sriracha Wings", "Sweet Potato Fries"]
+    },
+    {
+      "id": 5,
+      "title": "Korean Gochujang Sauce",
+      "description": "A spicy and savory glaze made with Korean chili paste.",
+      "image": "http://localhost:3000/assets/images/sauces/korean_gochujang_sauce.png",
+      "categories": ["spicy", "umami", "bold"],
+      "ingredients": [
+        {
+          "name": "gochujang (Korean chili paste)",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "soy sauce",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sesame oil",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "honey",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic",
+          "quantity": "1",
+          "value": 1,
+          "unit": "clove",
+          "notes": "minced"
+        }
+      ],
+      "instructions": [
+        "Whisk all ingredients together in a bowl until smooth.",
+        "Use as a glaze for grilled or baked wings."
+      ],
+      "pairings": ["Korean Gochujang Wings", "Kimchi Fried Rice"]
+    },
+    {
+      "sauces": [
+        {
+          "id": 6,
+          "title": "Sweet Chili Lime Sauce",
+          "description": "A tangy and slightly spicy glaze with lime and chili.",
+          "image": "http://localhost:3000/assets/images/sauces/sweet_chili_lime_sauce.png",
+          "categories": ["tangy", "spicy", "Asian-inspired"],
+          "ingredients": [
+            {
+              "name": "sweet chili sauce",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "lime juice",
+              "quantity": "2",
+              "value": 2,
+              "unit": "tbsp"
+            },
+            {
+              "name": "lime zest",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp"
+            },
+            {
+              "name": "red pepper flakes",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Combine sweet chili sauce, lime juice, lime zest, and red pepper flakes in a small bowl.",
+            "Stir until smooth and well combined.",
+            "Use as a glaze or dipping sauce."
+          ],
+          "pairings": ["Sweet Chili Lime Wings", "Kimchi Fried Rice"]
+        },
+        {
+          "id": 7,
+          "title": "Chipotle Lime Crema",
+          "description": "A smoky, creamy dip with a zesty lime kick.",
+          "image": "http://localhost:3000/assets/images/sauces/chipotle_lime_crema.png",
+          "categories": ["smoky", "creamy", "tangy"],
+          "ingredients": [
+            {
+              "name": "sour cream",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "cup"
+            },
+            {
+              "name": "chipotle in adobo",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp",
+              "notes": "minced"
+            },
+            {
+              "name": "lime juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "garlic powder",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Blend sour cream, minced chipotle, lime juice, and garlic powder until smooth.",
+            "Refrigerate for 30 minutes before serving."
+          ],
+          "pairings": [
+            "Chipotle Lime Wings",
+            "Truffle Parmesan Fries"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Tandoori Yogurt Sauce",
+          "description": "A creamy, spiced yogurt sauce for Indian-inspired wings.",
+          "image": "http://localhost:3000/assets/images/sauces/tandoori_yogurt_sauce.png",
+          "categories": ["spicy", "creamy", "Indian-inspired"],
+          "ingredients": [
+            {
+              "name": "plain yogurt",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "cup"
+            },
+            {
+              "name": "tandoori spice mix",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "lime juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "garlic paste",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Whisk together yogurt, tandoori spice mix, lime juice, and garlic paste.",
+            "Serve as a dipping sauce for grilled or baked wings."
+          ],
+          "pairings": ["Tandoori Wings", "Garlic Naan Bread"]
+        },
+        {
+          "id": 9,
+          "title": "Honey Mustard Sauce",
+          "description": "A classic combination of sweet honey and tangy mustard.",
+          "image": "http://localhost:3000/assets/images/sauces/honey_mustard_sauce.png",
+          "categories": ["sweet", "tangy", "classic"],
+          "ingredients": [
+            {
+              "name": "Dijon mustard",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "honey",
+              "quantity": "2",
+              "value": 2,
+              "unit": "tbsp"
+            },
+            {
+              "name": "mayonnaise",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            }
+          ],
+          "instructions": [
+            "Whisk together Dijon mustard, honey, and mayonnaise until smooth.",
+            "Use as a dipping sauce or glaze for wings."
+          ],
+          "pairings": ["Honey Mustard Wings", "Sweet Potato Fries"]
+        },
+        {
+          "id": 10,
+          "title": "Moroccan Harissa Sauce",
+          "description": "A spicy, aromatic sauce with North African flavors.",
+          "image": "http://localhost:3000/assets/images/sauces/moroccan_harissa_sauce.png",
+          "categories": ["spicy", "aromatic", "bold"],
+          "ingredients": [
+            {
+              "name": "harissa paste",
+              "quantity": "2",
+              "value": 2,
+              "unit": "tbsp"
+            },
+            {
+              "name": "olive oil",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "garlic",
+              "quantity": "1",
+              "value": 1,
+              "unit": "clove",
+              "notes": "minced"
+            }
+          ],
+          "instructions": [
+            "Mix harissa paste, olive oil, lemon juice, and minced garlic in a bowl.",
+            "Serve as a dipping sauce or glaze for wings."
+          ],
+          "pairings": ["Moroccan Harissa Wings", "Couscous Salad"]
+        },
+        {
+          "id": 11,
+          "title": "Coconut Curry Sauce",
+          "description": "A creamy, aromatic curry sauce with coconut milk.",
+          "image": "http://localhost:3000/assets/images/sauces/coconut_curry_sauce.png",
+          "categories": ["creamy", "aromatic", "spicy"],
+          "ingredients": [
+            {
+              "name": "coconut milk",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "cup"
+            },
+            {
+              "name": "yellow curry powder",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "lime juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "brown sugar",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "tbsp"
+            }
+          ],
+          "instructions": [
+            "Simmer coconut milk, curry powder, lime juice, and brown sugar over medium heat until slightly thickened.",
+            "Use as a glaze or dipping sauce."
+          ],
+          "pairings": ["Coconut Curry Wings", "Jasmine Rice"]
+        },
+        {
+          "id": 12,
+          "title": "Buffalo Ranch Sauce",
+          "description": "A creamy ranch dressing with a tangy Buffalo kick.",
+          "image": "http://localhost:3000/assets/images/sauces/buffalo_ranch_sauce.png",
+          "categories": ["creamy", "tangy", "bold"],
+          "ingredients": [
+            {
+              "name": "ranch dressing",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "Buffalo sauce",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "garlic powder",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Whisk ranch dressing, Buffalo sauce, and garlic powder until smooth.",
+            "Serve as a dipping sauce or toss with wings."
+          ],
+          "pairings": ["Buffalo Ranch Wings", "Celery Sticks"]
+        },
+        {
+          "id": 13,
+          "title": "Maple Bacon Glaze",
+          "description": "A rich and sweet glaze with smoky bacon undertones.",
+          "image": "http://localhost:3000/assets/images/sauces/maple_bacon_glaze.png",
+          "categories": ["sweet", "smoky", "decadent"],
+          "ingredients": [
+            {
+              "name": "maple syrup",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "bacon fat",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "brown sugar",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "tbsp"
+            },
+            {
+              "name": "apple cider vinegar",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Combine maple syrup, bacon fat, brown sugar, and apple cider vinegar in a saucepan.",
+            "Simmer over medium heat until thickened.",
+            "Brush onto wings while grilling or serve as a dipping sauce."
+          ],
+          "pairings": ["Maple Bacon Wings", "Truffle Parmesan Fries"]
+        },
+        {
+          "id": 14,
+          "title": "Szechuan Peppercorn Sauce",
+          "description": "A spicy, numbing sauce with bold Szechuan flavors.",
+          "image": "http://localhost:3000/assets/images/sauces/szechuan_peppercorn_sauce.png",
+          "categories": ["spicy", "bold", "Asian-inspired"],
+          "ingredients": [
+            {
+              "name": "soy sauce",
+              "quantity": "2",
+              "value": 2,
+              "unit": "tbsp"
+            },
+            {
+              "name": "hoisin sauce",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "Szechuan peppercorns",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "tsp",
+              "notes": "crushed"
+            },
+            {
+              "name": "garlic",
+              "quantity": "1",
+              "value": 1,
+              "unit": "clove",
+              "notes": "minced"
+            },
+            {
+              "name": "chili oil",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Heat chili oil in a saucepan and sauté garlic until fragrant.",
+            "Add soy sauce, hoisin sauce, and crushed Szechuan peppercorns.",
+            "Simmer for 5 minutes and use as a glaze or dipping sauce."
+          ],
+          "pairings": ["Szechuan Wings", "Kimchi Fried Rice"]
+        },
+        {
+          "id": 15,
+          "title": "Lemon Herb Butter Sauce",
+          "description": "A light and buttery sauce with fresh lemon and herbs.",
+          "image": "http://localhost:3000/assets/images/sauces/lemon_herb_butter_sauce.png",
+          "categories": ["light", "buttery", "zesty"],
+          "ingredients": [
+            {
+              "name": "unsalted butter",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "lemon juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "parsley",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp",
+              "notes": "chopped"
+            },
+            {
+              "name": "garlic",
+              "quantity": "1",
+              "value": 1,
+              "unit": "clove",
+              "notes": "minced"
+            }
+          ],
+          "instructions": [
+            "Melt butter in a saucepan over low heat.",
+            "Stir in lemon juice, parsley, and garlic until well combined.",
+            "Drizzle over wings or serve as a dipping sauce."
+          ],
+          "pairings": ["Lemon Herb Wings", "Buttermilk Biscuits"]
+        },
+        {
+          "id": 16,
+          "title": "Mango Habanero Sauce",
+          "description": "A fruity and fiery sauce with mango and habanero peppers.",
+          "image": "http://localhost:3000/assets/images/sauces/mango_habanero_sauce.png",
+          "categories": ["fruity", "spicy", "bold"],
+          "ingredients": [
+            {
+              "name": "mango puree",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "cup"
+            },
+            {
+              "name": "habanero peppers",
+              "quantity": "1",
+              "value": 1,
+              "unit": "piece",
+              "notes": "minced"
+            },
+            {
+              "name": "honey",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "lime juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            }
+          ],
+          "instructions": [
+            "Blend mango puree, minced habanero, honey, and lime juice until smooth.",
+            "Simmer mixture over medium heat for 5 minutes.",
+            "Cool slightly and use as a glaze or dip."
+          ],
+          "pairings": ["Mango Habanero Wings", "Coconut Rice"]
+        },
+        {
+          "id": 17,
+          "title": "Black Garlic Soy Glaze",
+          "description": "A deep, umami-packed glaze with black garlic and soy sauce.",
+          "image": "http://localhost:3000/assets/images/sauces/black_garlic_soy_glaze.png",
+          "categories": ["umami", "savory", "bold"],
+          "ingredients": [
+            {
+              "name": "black garlic",
+              "quantity": "2",
+              "value": 2,
+              "unit": "cloves",
+              "notes": "mashed"
+            },
+            {
+              "name": "soy sauce",
+              "quantity": "3",
+              "value": 3,
+              "unit": "tbsp"
+            },
+            {
+              "name": "brown sugar",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "rice vinegar",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Mash black garlic into a paste.",
+            "Combine with soy sauce, brown sugar, and rice vinegar in a saucepan.",
+            "Simmer until thickened and brush onto wings."
+          ],
+          "pairings": ["Black Garlic Wings", "Jasmine Rice"]
+        },
+        {
+          "id": 18,
+          "title": "Peanut Hoisin Sauce",
+          "description": "A creamy and nutty sauce with a hint of sweetness.",
+          "image": "http://localhost:3000/assets/images/sauces/peanut_hoisin_sauce.png",
+          "categories": ["nutty", "sweet", "Asian-inspired"],
+          "ingredients": [
+            {
+              "name": "peanut butter",
+              "quantity": "1 / 4",
+              "value": 0.25,
+              "unit": "cup"
+            },
+            {
+              "name": "hoisin sauce",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "soy sauce",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            },
+            {
+              "name": "lime juice",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tbsp"
+            }
+          ],
+          "instructions": [
+            "Whisk together peanut butter, hoisin sauce, soy sauce, and lime juice until smooth.",
+            "Thin with water if needed and serve as a dipping sauce."
+          ],
+          "pairings": ["Thai Peanut Wings", "Cucumber Salad"]
+        },
+        {
+          "id": 19,
+          "title": "Honey Balsamic Reduction",
+          "description": "A tangy and sweet sauce with a rich, syrupy texture.",
+          "image": "http://localhost:3000/assets/images/sauces/honey_balsamic_reduction.png",
+          "categories": ["sweet", "tangy", "syrupy"],
+          "ingredients": [
+            {
+              "name": "balsamic vinegar",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "cup"
+            },
+            {
+              "name": "honey",
+              "quantity": "2",
+              "value": 2,
+              "unit": "tbsp"
+            }
+          ],
+          "instructions": [
+            "Combine balsamic vinegar and honey in a saucepan over medium heat.",
+            "Simmer until reduced by half and thickened.",
+            "Drizzle over wings or serve as a dipping sauce."
+          ],
+          "pairings": ["Honey Balsamic Wings", "Roasted Vegetables"]
+        },
+        {
+          "id": 20,
+          "title": "Savory Herb Ranch Sauce",
+          "description": "A creamy and herby sauce with a savory twist.",
+          "image": "http://localhost:3000/assets/images/sauces/savory_herb_ranch_sauce.png",
+          "categories": ["creamy", "herby", "classic"],
+          "ingredients": [
+            {
+              "name": "mayonnaise",
+              "quantity": "1 / 2",
+              "value": 0.5,
+              "unit": "cup"
+            },
+            {
+              "name": "buttermilk",
+              "quantity": "2",
+              "value": 2,
+              "unit": "tbsp"
+            },
+            {
+              "name": "dill",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp",
+              "notes": "chopped"
+            },
+            {
+              "name": "garlic powder",
+              "quantity": "1",
+              "value": 1,
+              "unit": "tsp"
+            }
+          ],
+          "instructions": [
+            "Whisk mayonnaise, buttermilk, dill, and garlic powder until smooth.",
+            "Chill for 20 minutes before serving."
+          ],
+          "pairings": ["Savory Ranch Wings", "Celery Sticks"]
+        }
+      ]
+    }
+  ],
+  "seasoning_blends": [
+    {
+      "id": 1,
+      "title": "Southern Spice Blend",
+      "description": "A versatile seasoning mix for fried or grilled dishes.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/southern_spice_blend.png",
+      "categories": ["spicy", "savory", "classic"],
+      "ingredients": [
+        {
+          "name": "smoked paprika",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "onion powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "2", "value": 2, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Combine all ingredients and store in an airtight container."
+      ],
+      "pairings": [
+        "Classic Southern Fried Wings",
+        "Garlic Butter Parmesan Wings"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cajun Spice Blend",
+      "description": "A bold, spicy mix for blackened or fried dishes.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/cajun_spice_blend.png",
+      "categories": ["spicy", "bold", "southern"],
+      "ingredients": [
+        {
+          "name": "paprika",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oregano",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "onion powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients thoroughly and store in a cool, dry place."
+      ],
+      "pairings": ["Cajun Butter Wings", "Garlic Knots"]
+    },
+    {
+      "id": 3,
+      "title": "BBQ Dry Rub",
+      "description": "A smoky, sweet rub for grilled and smoked wings.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/bbq_dry_rub.png",
+      "categories": ["smoky", "sweet", "classic"],
+      "ingredients": [
+        {
+          "name": "brown sugar",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cumin",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "onion powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl.",
+        "Rub generously on wings before grilling or smoking."
+      ],
+      "pairings": ["Smoked BBQ Wings", "Classic Sweet Tea"]
+    },
+    {
+      "id": 4,
+      "title": "Lemon Pepper Seasoning",
+      "description": "A tangy and zesty blend for a refreshing twist.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/lemon_pepper_seasoning.png",
+      "categories": ["zesty", "tangy", "light"],
+      "ingredients": [
+        {
+          "name": "lemon zest",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients and use as a dry rub.",
+        "Toss wings in seasoning after frying or baking."
+      ],
+      "pairings": ["Lemon Pepper Wet Wings", "Buttermilk Biscuits"]
+    },
+    {
+      "id": 5,
+      "title": "Chipotle Lime Rub",
+      "description": "A smoky, spicy, and tangy rub with chipotle and lime.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/chipotle_lime_rub.png",
+      "categories": ["spicy", "smoky", "tangy"],
+      "ingredients": [
+        {
+          "name": "chipotle powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lime zest",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "brown sugar",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a small bowl.",
+        "Rub onto wings before grilling or roasting."
+      ],
+      "pairings": ["Chipotle Lime Wings", "Truffle Parmesan Fries"]
+    },
+    {
+      "id": 6,
+      "title": "Maple Bourbon Rub",
+      "description": "A sweet and warming blend with maple and bourbon notes.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/maple_bourbon_rub.png",
+      "categories": ["sweet", "warm", "BBQ"],
+      "ingredients": [
+        {
+          "name": "maple sugar",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "cinnamon",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "nutmeg",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl and mix well.",
+        "Rub onto wings before roasting or smoking."
+      ],
+      "pairings": ["Maple Bourbon Wings", "Sweet Potato Fries"]
+    },
+    {
+      "id": 7,
+      "title": "Tandoori Spice Mix",
+      "description": "A bold Indian-inspired blend for grilled or baked wings.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/tandoori_spice_mix.png",
+      "categories": ["Indian", "spicy", "aromatic"],
+      "ingredients": [
+        {
+          "name": "turmeric",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cumin",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "coriander",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ginger powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients thoroughly and store in an airtight container.",
+        "Use as a rub or mix with yogurt for a marinade."
+      ],
+      "pairings": ["Tandoori Wings", "Cucumber Raita"]
+    },
+    {
+      "id": 8,
+      "title": "Moroccan Spice Blend",
+      "description": "A fragrant blend with sweet and earthy spices.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/moroccan_spice_blend.png",
+      "categories": ["fragrant", "sweet", "earthy"],
+      "ingredients": [
+        {
+          "name": "cinnamon",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cumin",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ginger powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "cloves",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl and store in an airtight container.",
+        "Rub onto wings before grilling or baking."
+      ],
+      "pairings": ["Moroccan Harissa Wings", "Couscous Salad"]
+    },
+    {
+      "id": 9,
+      "title": "Sweet Chili Lime Rub",
+      "description": "A sweet and tangy seasoning with a mild chili kick.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/sweet_chili_lime_rub.png",
+      "categories": ["sweet", "tangy", "mild"],
+      "ingredients": [
+        {
+          "name": "chili powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "lime zest",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "sugar",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "paprika",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl.",
+        "Rub onto wings before grilling or roasting."
+      ],
+      "pairings": ["Sweet Chili Lime Wings", "Kimchi Fried Rice"]
+    },
+    {
+      "id": 10,
+      "title": "Garlic Herb Blend",
+      "description": "A light and fresh mix of garlic and Mediterranean herbs.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/garlic_herb_blend.png",
+      "categories": ["herby", "light", "Mediterranean"],
+      "ingredients": [
+        {
+          "name": "garlic powder",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "oregano",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "parsley",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp",
+          "notes": "dried"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Mix all ingredients together.",
+        "Toss wings in the blend after cooking or use as a pre-cooking rub."
+      ],
+      "pairings": ["Garlic Herb Wings", "Lemon Herb Butter Sauce"]
+    },
+    {
+      "id": 11,
+      "title": "Mango Habanero Rub",
+      "description": "A fruity and spicy seasoning blend for bold flavors.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/mango_habanero_rub.png",
+      "categories": ["fruity", "spicy", "bold"],
+      "ingredients": [
+        {
+          "name": "mango powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "habanero powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "sugar",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "salt",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl.",
+        "Rub onto wings before grilling or frying."
+      ],
+      "pairings": ["Mango Habanero Wings", "Coconut Rice"]
+    },
+    {
+      "id": 12,
+      "title": "Blackened Cajun Rub",
+      "description": "A smoky and spicy blend for a charred flavor.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/blackened_cajun_rub.png",
+      "categories": ["smoky", "spicy", "southern"],
+      "ingredients": [
+        {
+          "name": "paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "oregano",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Mix all ingredients thoroughly.",
+        "Rub onto wings and cook over high heat for a blackened finish."
+      ],
+      "pairings": ["Blackened Cajun Wings", "Sweet Potato Fries"]
+    },
+    {
+      "id": 13,
+      "title": "Sweet Paprika Honey Rub",
+      "description": "A smoky-sweet rub with hints of honey.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/sweet_paprika_honey_rub.png",
+      "categories": ["sweet", "smoky", "classic"],
+      "ingredients": [
+        {
+          "name": "smoked paprika",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "honey powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl.",
+        "Rub onto wings before grilling or baking."
+      ],
+      "pairings": ["Sweet Paprika Honey Wings", "Roasted Vegetables"]
+    },
+    {
+      "id": 14,
+      "title": "Szechuan Spice Mix",
+      "description": "A bold, numbing spice mix with Szechuan peppercorns.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/szechuan_spice_mix.png",
+      "categories": ["spicy", "bold", "Asian-inspired"],
+      "ingredients": [
+        {
+          "name": "Szechuan peppercorns",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp",
+          "notes": "crushed"
+        },
+        {
+          "name": "soy sauce powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "chili flakes",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "sugar",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients thoroughly.",
+        "Use as a dry rub or combine with oil for a marinade."
+      ],
+      "pairings": ["Szechuan Wings", "Kimchi Fried Rice"]
+    },
+    {
+      "id": 15,
+      "title": "Buffalo Ranch Dry Rub",
+      "description": "A creamy, herby, and slightly spicy dry rub.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/buffalo_ranch_dry_rub.png",
+      "categories": ["creamy", "herby", "spicy"],
+      "ingredients": [
+        {
+          "name": "ranch seasoning mix",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "onion powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl.",
+        "Rub onto wings before baking or frying."
+      ],
+      "pairings": ["Buffalo Ranch Wings", "Celery Sticks"]
+    },
+    {
+      "id": 16,
+      "title": "Herbes de Provence Rub",
+      "description": "A fragrant mix of herbs inspired by French cuisine.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/herbes_de_provence_rub.png",
+      "categories": ["herby", "aromatic", "classic"],
+      "ingredients": [
+        {
+          "name": "rosemary",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp",
+          "notes": "dried"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp",
+          "notes": "dried"
+        },
+        {
+          "name": "oregano",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp",
+          "notes": "dried"
+        },
+        {
+          "name": "lavender",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "tsp",
+          "notes": "optional"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        { "name": "salt", "quantity": "1", "value": 1, "unit": "tsp" }
+      ],
+      "instructions": [
+        "Combine all ingredients in a small bowl.",
+        "Rub onto wings before baking or grilling for a French-inspired flavor."
+      ],
+      "pairings": [
+        "Herbes de Provence Wings",
+        "Garlic Mashed Potatoes"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Korean BBQ Blend",
+      "description": "A sweet and smoky mix inspired by Korean BBQ.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/korean_bbq_blend.png",
+      "categories": ["sweet", "smoky", "bold"],
+      "ingredients": [
+        {
+          "name": "brown sugar",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "soy sauce powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ginger powder",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "smoked paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients in a small bowl.",
+        "Rub onto wings before grilling or smoking."
+      ],
+      "pairings": ["Korean BBQ Wings", "Jasmine Rice"]
+    },
+    {
+      "id": 18,
+      "title": "Mediterranean Zaatar Blend",
+      "description": "A savory and tangy seasoning with Middle Eastern flavors.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/mediterranean_zaatar_blend.png",
+      "categories": ["savory", "herby", "tangy"],
+      "ingredients": [
+        {
+          "name": "zaatar",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sumac",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "sesame seeds",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "salt",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients and mix well.",
+        "Use as a rub or toss wings in the seasoning after cooking."
+      ],
+      "pairings": [
+        "Mediterranean Zaatar Wings",
+        "Cucumber Yogurt Dip"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Savory Herb Ranch Mix",
+      "description": "A creamy, herb-infused dry mix for ranch lovers.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/savory_herb_ranch_mix.png",
+      "categories": ["creamy", "herby", "classic"],
+      "ingredients": [
+        {
+          "name": "buttermilk powder",
+          "quantity": "2",
+          "value": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic powder",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "dill",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp",
+          "notes": "dried"
+        },
+        {
+          "name": "parsley",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp",
+          "notes": "dried"
+        },
+        {
+          "name": "salt",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "black pepper",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients thoroughly.",
+        "Sprinkle on wings after cooking or mix with yogurt for a dipping sauce."
+      ],
+      "pairings": ["Savory Ranch Wings", "Celery Sticks"]
+    },
+    {
+      "id": 20,
+      "title": "Caribbean Jerk Seasoning",
+      "description": "A bold and spicy mix with Caribbean flavors.",
+      "image": "http://localhost:3000/assets/images/seasoning_blends/caribbean_jerk_seasoning.png",
+      "categories": ["spicy", "bold", "Caribbean"],
+      "ingredients": [
+        {
+          "name": "allspice",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cinnamon",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "nutmeg",
+          "quantity": "1 / 4",
+          "value": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "name": "thyme",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "paprika",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "cayenne pepper",
+          "quantity": "1",
+          "value": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "salt",
+          "quantity": "1 / 2",
+          "value": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Mix all ingredients thoroughly.",
+        "Rub onto wings and let marinate before grilling or roasting."
+      ],
+      "pairings": ["Jerk Wings", "Sweet Plantains"]
+    }
+  ],
+  "audio" : [
+    {
+      "id": 1,
+      "title": "Times Up Sound Effect",
+      "audio_url": "http://localhost:3000/assets/sounds/times-up.mp3"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

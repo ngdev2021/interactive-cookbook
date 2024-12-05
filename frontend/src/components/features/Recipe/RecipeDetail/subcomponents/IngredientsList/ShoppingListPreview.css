@@ -1,0 +1,123 @@
+:root {
+  --primary-accent: #ff914d;
+  --secondary-accent: #ff7a33;
+  --background-light: #ffffff;
+  --background-gray: #f9f9f9;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --border-light: #e0e0e0;
+}
+
+.shopping-list-preview {
+  background: var(--background-light);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.shopping-list-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--primary-accent);
+}
+
+.shopping-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.shopping-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.shopping-list-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-details {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.shopping-list-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.clear-list-button,
+.export-list-button {
+  background-color: var(--primary-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.clear-list-button:hover,
+.export-list-button:hover {
+  background-color: var(--secondary-accent);
+  transform: translateY(-2px);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.empty-state-image {
+  max-width: 100px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.progress-bar-container {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  height: 24px;
+  margin: 16px 0;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #ff914d, #ff7a33, #44c767);
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+.store-quantity {
+  font-weight: bold;
+  color: #333;
+}
+
+.grocery-details {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 5px;
+}
+
+.grocery-details span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+

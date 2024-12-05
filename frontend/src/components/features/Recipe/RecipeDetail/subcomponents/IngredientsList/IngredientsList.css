@@ -1,0 +1,148 @@
+:root {
+  --primary-accent: #FF914D;
+  --secondary-accent: #FF7A33;
+  --background-light: #FFFFFF;
+  --background-gray: #F9F9F9;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --border-light: #E0E0E0;
+}
+
+[data-theme="dark"] {
+  --primary-accent: #FF914D;
+  --secondary-accent: #FF7A33;
+  --background-light: #1E1E1E;
+  --background-gray: #2C2C2C;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --border-light: #444444;
+}
+
+.recipe-ingredients {
+  padding: 24px;
+  background: var(--background-light);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.ingredients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ingredients-header h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar,
+.sort-dropdown {
+  padding: 8px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.toggle-unit-button {
+  background-color: var(--primary-accent);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-unit-button:hover {
+  background-color: var(--secondary-accent);
+  transform: translateY(-2px);
+}
+
+.ingredient-group {
+  margin: 24px 0 16px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-accent);
+  text-transform: capitalize;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ingredient-thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-name {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.ingredient-notes,
+.ingredient-restrictions,
+.ingredient-sourcing,
+.ingredient-substitutions {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.add-to-shopping-button {
+  margin-left: auto;
+  background-color: var(--primary-accent);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-shopping-button:hover {
+  background-color: var(--secondary-accent);
+  transform: translateY(-2px);
+}
+
+.substitution-suggestions {
+  background: var(--background-gray);
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.substitution-suggestions h3 {
+  margin-bottom: 12px;
+  color: var(--primary-accent);
+}
+
+.substitution-suggestions ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+
+.substitution-suggestions li {
+  margin-bottom: 8px;
+}

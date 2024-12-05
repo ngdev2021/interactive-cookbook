@@ -1,16 +1,13 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home';
-import MealPlanner from './pages/MealPlanner';
-import RecipeDetail from './pages/RecipeDetail';
-import ShoppingList from './pages/ShoppingList';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/layout/Navbar/Navbar';
+import RecipeDetail from './components/features/Recipe/RecipeDetail/RecipeDetail';
+
+import Home from './pages/Home/Home';
+import MealPlanner from './components/features/MealPlanner/MealPlanner';
+import ShoppingList from './components/features/ShoppingList/ShoppingList';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService/TermsOfService';
 
 const App = () => {
   return (

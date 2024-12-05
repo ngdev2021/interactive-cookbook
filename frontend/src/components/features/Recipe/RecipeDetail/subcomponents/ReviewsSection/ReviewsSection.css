@@ -1,0 +1,107 @@
+.recipe-reviews {
+  margin: 20px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.recipe-reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #ff914d;
+  display: inline-block;
+}
+
+.review-summary {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star.active {
+  color: #ff914d;
+}
+
+.recipe-reviews textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-reviews button {
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-reviews button:hover {
+  background-color: #ff7a33;
+}
+
+.reviews-list {
+  margin-top: 20px;
+}
+
+.review {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.review p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.review-header {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

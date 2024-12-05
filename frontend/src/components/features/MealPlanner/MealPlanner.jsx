@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { MealPlanContext } from '../contexts/MealPlanContext';
+import { MealPlanContext } from '../../../contexts/MealPlanContext';
 
 const MealPlanner = () => {
   const { mealPlan, addRecipeToMealPlan } =

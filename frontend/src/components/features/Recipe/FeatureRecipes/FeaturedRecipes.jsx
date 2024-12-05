@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ContentDisplay from '../ContentDisplay/ContentDisplay';
-import RecipeCard from '../RecipeCard/RecipeCard';
+import ContentDisplay from '../../../common/ContentDisplay/ContentDisplay';
+import RecipeCard from '../subcomponents/RecipeCard';
 
 const FeaturedRecipes = () => {
   const [recipes, setRecipes] = useState([]);

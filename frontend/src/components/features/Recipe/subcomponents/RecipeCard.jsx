@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './RecipeCard.css';
-import Card from '../Card/Card';
+import Card from '../../../common/Card/Card';
 
 const RecipeCard = ({ recipe }) => {
   return (

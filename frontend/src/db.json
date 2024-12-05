@@ -3832,6 +3832,13 @@
       "title": "Times Up Sound Effect",
       "audio_url": "http://localhost:3000/assets/sounds/times-up.mp3"
     }
+  ],
+  "fallback-image" : [
+    {
+      "id": 1,
+      "image_url": "http://localhost:3000/assets/images/coming-soon.png"
+    }
+
   ]
 }
 

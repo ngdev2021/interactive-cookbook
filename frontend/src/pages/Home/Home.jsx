@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Hero from '../components/Hero/Hero';
-import { fetchRecipes } from '../utils/api';
+import Hero from '../../components/layout/Hero/Hero';
+import { fetchRecipes } from '../../utils';
 import './Home.css';
-import FeaturedRecipes from '../components/FeatureRecipes/FeaturedRecipes';
+import FeaturedRecipes from '../../components/features/Recipe/FeatureRecipes/index';
 
 const Home = () => {
   const [recipes, setRecipes] = useState([]);

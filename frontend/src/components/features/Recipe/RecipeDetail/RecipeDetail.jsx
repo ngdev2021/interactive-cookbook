@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, NavLink } from 'react-router-dom';
-import {
-  CircularProgressbar,
-  buildStyles,
-} from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
+import { useParams } from 'react-router-dom';
+import Header from './subcomponents/Header/Header';
+import ServingsAdjuster from './subcomponents/ServingsAdjuster/ServingsAdjuster';
+import IngredientsList from './subcomponents/IngredientsList/IngredientsList';
+import InstructionsList from './subcomponents/InstructionsList/InstructionsList';
+import ReviewsSection from './subcomponents/ReviewsSection/ReviewsSection';
 import './RecipeDetail.css';
 
 const RecipeDetail = () => {
@@ -240,10 +240,23 @@ const RecipeDetail = () => {
     );
   };
 
-  const handleRatingSubmit = (e) => {
-    e.preventDefault();
+  const handleRatingSubmit = (event) => {
+    if (!event) {
+      console.error(
+        'Event is undefined. Ensure the onSubmit handler passes the event.'
+      );
+      return;
+    }
+
+    event.preventDefault();
+
+    if (rating === 0 || comment.trim() === '') {
+      alert('Please provide a rating and a comment!');
+      return;
+    }
+
     const newReview = { rating, comment };
-    setReviews([...reviews, newReview]);
+    setReviews((prevReviews) => [...prevReviews, newReview]);
     setRating(0);
     setComment('');
   };
@@ -254,173 +267,34 @@ const RecipeDetail = () => {
 
   return (
     <div className="recipe-detail">
-      {/* Recipe Header */}
-      <div className="recipe-header">
-        <img
-          src={recipe.image || '/placeholder-image.jpg'}
-          alt={recipe.title || 'Recipe Image'}
-          className="recipe-detail-image"
-        />
-        <div className="recipe-summary">
-          <h1>{recipe.title}</h1>
-          <p>{recipe.description}</p>
-          <p>
-            <strong>Prep Time:</strong> {recipe.prep_time} mins
-          </p>
-          <p>
-            <strong>Cook Time:</strong> {recipe.cook_time} mins
-          </p>
-          <p>
-            <strong>Total Time:</strong> {recipe.total_time} mins
-          </p>
-          <p>
-            <strong>Difficulty:</strong> {recipe.difficulty}
-          </p>
-          <button
-            className="favorite-button"
-            onClick={saveToFavorites}
-          >
-            Save to Favorites
-          </button>
-        </div>
-      </div>
-
-      {/* Servings Adjuster */}
-      <div className="servings-adjuster">
-        <label htmlFor="servings">Adjust Servings:</label>
-        <input
-          type="number"
-          id="servings"
-          value={servings}
-          onChange={(e) => setServings(e.target.value)}
-        />
-      </div>
-
-      {/* Ingredients Section */}
-      <div className="recipe-ingredients">
-        <h2>Ingredients</h2>
-        <ul>
-          {recipe.ingredients.map((ingredient, index) => (
-            <li key={`${ingredient.name}-${index}`}>
-              {calculateScaledQuantity(ingredient).toFixed(2)}{' '}
-              {ingredient.unit || ''} {ingredient.name}
-              {ingredient.substitutions && (
-                <div className="substitutions">
-                  Substitutes: {ingredient.substitutions.join(', ')}
-                </div>
-              )}
-            </li>
-          ))}
-        </ul>
-        ; ; ;
-        <div>
-          <h3>Substitution Suggestions:</h3>
-          <ul>
-            {Object.entries(recipe.substitutions || {}).map(
-              ([key, value]) => (
-                <li key={key}>
-                  {key}: {value}
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-      </div>
-
-      {/* Instructions Section */}
-      <div className="instructions-section">
-        <h2>Instructions</h2>
-        <ol>
-          {recipe.instructions.map((step, index) => (
-            <li key={index}>
-              <input
-                type="checkbox"
-                checked={completedSteps.includes(index)}
-                onChange={() => toggleStepCompletion(index)}
-              />
-              <p>{step.instruction}</p>
-              {step.tip && (
-                <p className="instruction-tip">
-                  <strong>Tip:</strong> {step.tip}
-                </p>
-              )}
-              {step.timer && (
-                <div className="timer-controls">
-                  <CircularProgressbar
-                    value={
-                      100 -
-                      (timers[index]?.time /
-                        (step.timer.duration * 60)) *
-                        100
-                    }
-                    text={formatTime(
-                      timers[index]?.time || step.timer.duration * 60
-                    )}
-                    styles={buildStyles({
-                      textColor: '#FF914D',
-                      pathColor: '#FF914D',
-                      trailColor: '#e6e6e6',
-                    })}
-                  />
-                  <div className="timer-buttons">
-                    <button onClick={() => handleStartTimer(index)}>
-                      Start
-                    </button>
-                    <button onClick={() => handlePauseTimer(index)}>
-                      Pause
-                    </button>
-                    <button onClick={() => resetTimer(index)}>
-                      Reset
-                    </button>
-                  </div>
-                </div>
-              )}
-              {step.media?.step_photo && (
-                <img
-                  src={step.media.step_photo}
-                  alt={`Step ${index + 1}`}
-                />
-              )}
-            </li>
-          ))}
-        </ol>
-      </div>
-
-      {/* Reviews Section */}
-      <div className="recipe-reviews">
-        <h2>Rate and Review</h2>
-        <form onSubmit={handleRatingSubmit}>
-          <label htmlFor="rating">Rating:</label>
-          <select
-            id="rating"
-            value={rating}
-            onChange={(e) => setRating(e.target.value)}
-          >
-            <option value={0}>Select...</option>
-            {[1, 2, 3, 4, 5].map((star) => (
-              <option key={star} value={star}>
-                {star} Stars
-              </option>
-            ))}
-          </select>
-          <textarea
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            placeholder="Write your review here"
-          />
-          <button type="submit">Submit Review</button>
-        </form>
-        <div className="reviews-list">
-          {reviews.map((review, index) => (
-            <div key={index} className="review">
-              <p>
-                <strong>Rating:</strong> {review.rating} Stars
-              </p>
-              <p>{review.comment}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Header recipe={recipe} onSaveToFavorites={saveToFavorites} />
+      <ServingsAdjuster
+        servings={servings}
+        setServings={setServings}
+      />
+      <IngredientsList
+        ingredients={recipe.ingredients}
+        calculateScaledQuantity={calculateScaledQuantity}
+        substitutions={recipe.substitutions}
+      />
+      <InstructionsList
+        instructions={recipe.instructions}
+        timers={timers}
+        completedSteps={completedSteps}
+        toggleStepCompletion={toggleStepCompletion}
+        handleStartTimer={handleStartTimer}
+        handlePauseTimer={handlePauseTimer}
+        resetTimer={resetTimer}
+        formatTime={formatTime}
+      />
+      <ReviewsSection
+        reviews={reviews}
+        rating={rating}
+        comment={comment}
+        handleRatingSubmit={handleRatingSubmit}
+        setRating={setRating}
+        setComment={setComment}
+      />
     </div>
   );
 };

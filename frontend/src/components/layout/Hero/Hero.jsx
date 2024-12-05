@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
-import heroImage from '../../public/assets/images/main/rustic-food_upscaled.png'; // Replace with your actual hero image path
-
+import heroImage from '../../../assets/images/rustic-food_upscaled.png';
 const Hero = () => {
   return (
     <div

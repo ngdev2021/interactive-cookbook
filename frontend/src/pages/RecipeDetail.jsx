@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import {
   CircularProgressbar,
   buildStyles,
@@ -14,8 +14,61 @@ const RecipeDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [timers, setTimers] = useState({});
+  const [servings, setServings] = useState(1);
+  const [completedSteps, setCompletedSteps] = useState([]);
+  const [favorites, setFavorites] = useState([]);
+  const [rating, setRating] = useState(0);
+  const [reviews, setReviews] = useState([]);
+  const [comment, setComment] = useState('');
 
-  // Fetch audio file
+  const validateRecipeData = (recipe) => {
+    const requiredFields = [
+      'title',
+      'servings',
+      'ingredients',
+      'instructions',
+    ];
+    requiredFields.forEach((field) => {
+      if (!recipe[field]) {
+        console.warn(`Missing required field: ${field}`);
+      }
+    });
+  };
+
+  const scalingModifiers = {
+    liquid: 1.0,
+    fat: 0.9,
+    thickener: 0.8,
+    strong_thickener: 0.6,
+    leavening: 0.7,
+    salt: 0.9,
+    sugar: 1.0,
+    caramel_sugar: 0.8,
+    acid: 0.9,
+    spice: 0.7,
+    protein: 1.0,
+    starch: 1.0,
+    soft_starch: 0.9,
+    aromatic: 0.8,
+    alcohol: 0.9,
+    hydrocolloid: 0.5,
+    heat_sensitive: 0.8,
+    flavor_extract: 0.8,
+  };
+
+  const calculateScaledQuantity = (ingredient) => {
+    if (!ingredient.quantity || !recipe?.default_servings) {
+      return ingredient.optional ? 'Optional' : 0; // Handle optional cases
+    }
+
+    const scalingFactor = servings / recipe.default_servings;
+    const modifier = scalingModifiers[ingredient.type] || 1;
+
+    const scaledQuantity =
+      ingredient.quantity * scalingFactor * modifier;
+    return scaledQuantity > 0 ? scaledQuantity : 0; // No negative values
+  };
+
   useEffect(() => {
     const fetchAudio = async () => {
       try {
@@ -35,6 +88,14 @@ const RecipeDetail = () => {
   }, []);
 
   useEffect(() => {
+    const enrichIngredients = (ingredients) => {
+      return ingredients.map((ingredient) => ({
+        ...ingredient,
+        type: ingredient.type || 'general', // Default type if missing
+        quantity: ingredient.quantity || 0, // Default quantity if missing
+      }));
+    };
+
     const fetchRecipe = async () => {
       try {
         const response = await fetch(
@@ -43,24 +104,19 @@ const RecipeDetail = () => {
         if (!response.ok)
           throw new Error('Failed to fetch recipe details');
         const data = await response.json();
+
+        // Ensure default_servings exists
+        if (!data.default_servings) {
+          data.default_servings = data.servings || 1; // Infer from servings
+        }
+
+        // Validate and enrich ingredients
+        if (data.ingredients) {
+          data.ingredients = enrichIngredients(data.ingredients);
+        }
+
         setRecipe(data);
-
-        // Load timers from localStorage or initialize
-        const savedTimers =
-          JSON.parse(localStorage.getItem(`timers-${id}`)) || {};
-        const initialTimers = {};
-
-        data.instructions.forEach((step, index) => {
-          const savedTimer = savedTimers[index];
-          if (step.timer) {
-            initialTimers[index] = savedTimer || {
-              time: step.timer.duration * 60,
-              running: false,
-              adjustable: step.timer.adjustable,
-            };
-          }
-        });
-        setTimers(initialTimers);
+        setServings(data.default_servings);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -71,10 +127,50 @@ const RecipeDetail = () => {
     fetchRecipe();
   }, [id]);
 
+  const initializeTimers = (instructions) => {
+    const savedTimers =
+      JSON.parse(localStorage.getItem(`timers-${id}`)) || {};
+    const initialTimers = {};
+    instructions.forEach((step, index) => {
+      if (step.timer) {
+        initialTimers[index] = savedTimers[index] || {
+          time: step.timer.duration * 60,
+          running: false,
+          adjustable: step.timer.adjustable,
+        };
+      }
+    });
+    return initialTimers;
+  };
+
   useEffect(() => {
-    // Save timers to localStorage whenever they change
+    if (recipe?.instructions) {
+      setTimers(initializeTimers(recipe.instructions));
+    }
+  }, [recipe]);
+
+  useEffect(() => {
     localStorage.setItem(`timers-${id}`, JSON.stringify(timers));
   }, [timers, id]);
+
+  const saveToFavorites = () => {
+    const currentFavorites =
+      JSON.parse(localStorage.getItem('favorites')) || [];
+    const updatedFavorites = [...currentFavorites, recipe];
+    localStorage.setItem(
+      'favorites',
+      JSON.stringify(updatedFavorites)
+    );
+    setFavorites(updatedFavorites);
+  };
+
+  const toggleStepCompletion = (index) => {
+    setCompletedSteps((prev) =>
+      prev.includes(index)
+        ? prev.filter((step) => step !== index)
+        : [...prev, index]
+    );
+  };
 
   const handleStartTimer = (index) => {
     if (!timers[index]?.running) {
@@ -87,7 +183,6 @@ const RecipeDetail = () => {
             clearInterval(interval);
             updatedTimers[index].running = false;
 
-            // Play sound when timer ends
             if (audioUrl) {
               const audio = new Audio(audioUrl);
               audio
@@ -118,16 +213,6 @@ const RecipeDetail = () => {
     }
   };
 
-  const adjustTimer = (index, adjustment) => {
-    setTimers((prevTimers) => ({
-      ...prevTimers,
-      [index]: {
-        ...prevTimers[index],
-        time: Math.max(0, prevTimers[index].time + adjustment * 60),
-      },
-    }));
-  };
-
   const resetTimer = (index) => {
     setTimers((prevTimers) => ({
       ...prevTimers,
@@ -146,6 +231,7 @@ const RecipeDetail = () => {
   };
 
   const calculateProgress = () => {
+    if (!recipe?.instructions) return 0;
     const completedSteps = Object.values(timers).filter(
       (timer) => timer.time === 0
     ).length;
@@ -154,9 +240,17 @@ const RecipeDetail = () => {
     );
   };
 
-  if (loading) return <p>Loading recipe...</p>;
-  if (error) return <p>Error: {error}</p>;
-  if (!recipe) return <p>No recipe found!</p>;
+  const handleRatingSubmit = (e) => {
+    e.preventDefault();
+    const newReview = { rating, comment };
+    setReviews([...reviews, newReview]);
+    setRating(0);
+    setComment('');
+  };
+
+  if (loading)
+    return <div className="loader">Loading recipe details...</div>;
+  if (error) return <div className="error-message">{error}</div>;
 
   return (
     <div className="recipe-detail">
@@ -182,27 +276,68 @@ const RecipeDetail = () => {
           <p>
             <strong>Difficulty:</strong> {recipe.difficulty}
           </p>
+          <button
+            className="favorite-button"
+            onClick={saveToFavorites}
+          >
+            Save to Favorites
+          </button>
         </div>
       </div>
 
-      {/* Progress Tracker */}
-      <div className="progress-tracker">
-        <h2>Recipe Progress</h2>
-        <div className="progress-bar">
-          <div
-            className="progress-bar-fill"
-            style={{ width: `${calculateProgress()}%` }}
-          />
-        </div>
-        <p>{calculateProgress()}% Complete</p>
+      {/* Servings Adjuster */}
+      <div className="servings-adjuster">
+        <label htmlFor="servings">Adjust Servings:</label>
+        <input
+          type="number"
+          id="servings"
+          value={servings}
+          onChange={(e) => setServings(e.target.value)}
+        />
       </div>
 
-      {/* Instructions */}
+      {/* Ingredients Section */}
+      <div className="recipe-ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          {recipe.ingredients.map((ingredient, index) => (
+            <li key={`${ingredient.name}-${index}`}>
+              {calculateScaledQuantity(ingredient).toFixed(2)}{' '}
+              {ingredient.unit || ''} {ingredient.name}
+              {ingredient.substitutions && (
+                <div className="substitutions">
+                  Substitutes: {ingredient.substitutions.join(', ')}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+        ; ; ;
+        <div>
+          <h3>Substitution Suggestions:</h3>
+          <ul>
+            {Object.entries(recipe.substitutions || {}).map(
+              ([key, value]) => (
+                <li key={key}>
+                  {key}: {value}
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+      </div>
+
+      {/* Instructions Section */}
       <div className="instructions-section">
         <h2>Instructions</h2>
         <ol>
           {recipe.instructions.map((step, index) => (
             <li key={index}>
+              <input
+                type="checkbox"
+                checked={completedSteps.includes(index)}
+                onChange={() => toggleStepCompletion(index)}
+              />
               <p>{step.instruction}</p>
               {step.tip && (
                 <p className="instruction-tip">
@@ -229,23 +364,14 @@ const RecipeDetail = () => {
                   />
                   <div className="timer-buttons">
                     <button onClick={() => handleStartTimer(index)}>
-                      {timers[index]?.running ? 'Pause' : 'Start'}
+                      Start
+                    </button>
+                    <button onClick={() => handlePauseTimer(index)}>
+                      Pause
                     </button>
                     <button onClick={() => resetTimer(index)}>
                       Reset
                     </button>
-                    {timers[index]?.adjustable && (
-                      <>
-                        <button onClick={() => adjustTimer(index, 1)}>
-                          +1 min
-                        </button>
-                        <button
-                          onClick={() => adjustTimer(index, -1)}
-                        >
-                          -1 min
-                        </button>
-                      </>
-                    )}
                   </div>
                 </div>
               )}
@@ -258,6 +384,42 @@ const RecipeDetail = () => {
             </li>
           ))}
         </ol>
+      </div>
+
+      {/* Reviews Section */}
+      <div className="recipe-reviews">
+        <h2>Rate and Review</h2>
+        <form onSubmit={handleRatingSubmit}>
+          <label htmlFor="rating">Rating:</label>
+          <select
+            id="rating"
+            value={rating}
+            onChange={(e) => setRating(e.target.value)}
+          >
+            <option value={0}>Select...</option>
+            {[1, 2, 3, 4, 5].map((star) => (
+              <option key={star} value={star}>
+                {star} Stars
+              </option>
+            ))}
+          </select>
+          <textarea
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+            placeholder="Write your review here"
+          />
+          <button type="submit">Submit Review</button>
+        </form>
+        <div className="reviews-list">
+          {reviews.map((review, index) => (
+            <div key={index} className="review">
+              <p>
+                <strong>Rating:</strong> {review.rating} Stars
+              </p>
+              <p>{review.comment}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -36,48 +36,64 @@
         }
       ],
       "inspiration": "This dish brings the soulful traditions of the South to your kitchen, blending classic techniques with modern flavors.",
-      "ingredients": [
-        {
-          "name": "chicken wings",
-          "quantity": 2,
-          "unit": "lbs",
-          "notes": "split into drumettes and flats for even cooking",
-          "sourcing_info": {
-            "origin": "Free-range farm, organic-certified",
-            "sustainable": true
-          }
-        },
-        {
-          "name": "buttermilk",
-          "quantity": 2,
-          "unit": "cups",
-          "substitutions": ["almond milk + 1 tbsp vinegar"],
-          "usage": "marinade",
-          "dietary_restrictions": ["dairy-free substitute available"]
-        },
-        {
-          "name": "all-purpose flour",
-          "quantity": 2,
-          "unit": "cups",
-          "substitutions": ["gluten-free flour"],
-          "usage": "coating"
-        },
-        {
-          "name": "smoked paprika",
-          "quantity": 1,
-          "unit": "tbsp",
-          "notes": "adds smoky depth to the flavor"
-        },
-        { "name": "cayenne pepper", "quantity": 1, "unit": "tsp" },
-        { "name": "salt", "quantity": 2, "unit": "tsp" },
-        {
-          "name": "truffle hot honey",
-          "quantity": 1,
-          "unit": "cup",
-          "optional": true,
-          "usage": "drizzle after frying"
-        }
-      ],
+     "ingredients": [
+  {
+    "name": "chicken wings",
+    "quantity": 2,
+    "unit": "lbs",
+    "notes": "split into drumettes and flats for even cooking",
+    "type": "protein",
+    "sourcing_info": {
+      "origin": "Free-range farm, organic-certified",
+      "sustainable": true
+    }
+  },
+  {
+    "name": "buttermilk",
+    "quantity": 2,
+    "unit": "cups",
+    "substitutions": ["almond milk + 1 tbsp vinegar"],
+    "usage": "marinade",
+    "type": "liquid",
+    "dietary_restrictions": ["dairy-free substitute available"]
+  },
+  {
+    "name": "all-purpose flour",
+    "quantity": 2,
+    "unit": "cups",
+    "substitutions": ["gluten-free flour"],
+    "usage": "coating",
+    "type": "thickener"
+  },
+  {
+    "name": "smoked paprika",
+    "quantity": 1,
+    "unit": "tbsp",
+    "notes": "adds smoky depth to the flavor",
+    "type": "spice"
+  },
+  {
+    "name": "cayenne pepper",
+    "quantity": 1,
+    "unit": "tsp",
+    "type": "spice"
+  },
+  {
+    "name": "salt",
+    "quantity": 2,
+    "unit": "tsp",
+    "type": "salt"
+  },
+  {
+    "name": "truffle hot honey",
+    "quantity": 1,
+    "unit": "cup",
+    "optional": true,
+    "usage": "drizzle after frying",
+    "type": "liquid"
+  }
+],
+
      "instructions": [
         {
           "step": 1,
@@ -283,43 +299,54 @@
         }
       ],
       "inspiration": "Inspired by backyard summer BBQs, this recipe balances the sweetness of honey with the bold flavor of garlic.",
-      "ingredients": [
-        {
-          "name": "chicken wings",
-          "quantity": 2,
-          "unit": "lbs",
-          "notes": "keep skin-on for better grilling results",
-          "sourcing_info": {
-            "origin": "Locally sourced, hormone-free",
-            "sustainable": true
-          }
-        },
-        {
-          "name": "honey",
-          "quantity": 1,
-          "unit": "cup",
-          "substitutions": ["agave syrup"]
-        },
-        {
-          "name": "garlic cloves",
-          "quantity": 4,
-          "unit": "minced",
-          "notes": "fresh garlic preferred for robust flavor"
-        },
-        {
-          "name": "soy sauce",
-          "quantity": 1,
-          "unit": "tbsp",
-          "substitutions": ["coconut aminos"]
-        },
-        {
-          "name": "olive oil",
-          "quantity": 2,
-          "unit": "tbsp",
-          "notes": "for grilling marinade"
-        },
-        { "name": "black pepper", "quantity": 1, "unit": "tsp" }
-      ],
+     "ingredients": [
+  {
+    "name": "chicken wings",
+    "quantity": 2,
+    "unit": "lbs",
+    "notes": "keep skin-on for better grilling results",
+    "type": "protein",
+    "sourcing_info": {
+      "origin": "Locally sourced, hormone-free",
+      "sustainable": true
+    }
+  },
+  {
+    "name": "honey",
+    "quantity": 1,
+    "unit": "cup",
+    "substitutions": ["agave syrup"],
+    "type": "liquid"
+  },
+  {
+    "name": "garlic cloves",
+    "quantity": 4,
+    "unit": "minced",
+    "notes": "fresh garlic preferred for robust flavor",
+    "type": "aromatic"
+  },
+  {
+    "name": "soy sauce",
+    "quantity": 1,
+    "unit": "tbsp",
+    "substitutions": ["coconut aminos"],
+    "type": "liquid"
+  },
+  {
+    "name": "olive oil",
+    "quantity": 2,
+    "unit": "tbsp",
+    "notes": "for grilling marinade",
+    "type": "fat"
+  },
+  {
+    "name": "black pepper",
+    "quantity": 1,
+    "unit": "tsp",
+    "type": "spice"
+  }
+],
+
      "instructions": [
         {
           "step": 1,
@@ -481,6 +508,7 @@
           "quantity": 2,
           "unit": "lbs",
           "notes": "whole or split into flats and drumettes",
+          "type": "protein",
           "sourcing_info": {
             "origin": "Farm-raised, antibiotic-free",
             "sustainable": true
@@ -490,26 +518,35 @@
           "name": "BBQ rub",
           "quantity": 3,
           "unit": "tbsp",
-          "notes": "store-bought or homemade"
+          "notes": "store-bought or homemade",
+          "type": "spice"
         },
         {
           "name": "brown sugar",
           "quantity": 2,
           "unit": "tbsp",
-          "notes": "for caramelization"
+          "notes": "for caramelization",
+          "type": "sugar"
         },
-        { "name": "paprika", "quantity": 1, "unit": "tbsp" },
+        {
+          "name": "paprika",
+          "quantity": 1,
+          "unit": "tbsp",
+          "type": "spice"
+        },
         {
           "name": "smoked wood chips",
           "quantity": 1,
           "unit": "cup",
-          "notes": "soaked in water for 30 minutes"
+          "notes": "soaked in water for 30 minutes",
+          "type": "heat_sensitive"
         },
         {
           "name": "BBQ sauce",
           "quantity": 1,
           "unit": "cup",
-          "substitutions": ["Carolina-style vinegar sauce"]
+          "substitutions": ["Carolina-style vinegar sauce"],
+          "type": "liquid"
         }
       ],
       "instructions": [
@@ -691,42 +728,63 @@
          "name": "chicken wings",
          "quantity": 2,
          "unit": "lbs",
-         "notes": "split into flats and drumettes"
+         "notes": "split into flats and drumettes",
+         "type": "protein"
        },
        {
          "name": "buttermilk",
          "quantity": 2,
          "unit": "cups",
          "substitutions": ["almond milk + 1 tbsp vinegar"],
-         "usage": "marinade"
+         "usage": "marinade",
+         "type": "liquid"
        },
        {
          "name": "all-purpose flour",
          "quantity": 2,
          "unit": "cups",
          "substitutions": ["gluten-free flour"],
-         "usage": "coating"
+         "usage": "coating",
+         "type": "thickener"
        },
-       { "name": "cayenne pepper", "quantity": 1, "unit": "tsp" },
-       { "name": "paprika", "quantity": 1, "unit": "tbsp" },
-       { "name": "salt", "quantity": 2, "unit": "tsp" },
+       {
+         "name": "cayenne pepper",
+         "quantity": 1,
+         "unit": "tsp",
+         "type": "spice"
+       },
+       {
+         "name": "paprika",
+         "quantity": 1,
+         "unit": "tbsp",
+         "type": "spice"
+       },
+       {
+         "name": "salt",
+         "quantity": 2,
+         "unit": "tsp",
+         "type": "salt"
+       },
        {
          "name": "vegetable oil",
          "quantity": 4,
          "unit": "cups",
-         "usage": "for frying"
+         "usage": "for frying",
+         "type": "fat"
        },
        {
          "name": "truffle hot honey",
          "quantity": 1,
          "unit": "cup",
-         "substitutions": ["hot honey + truffle oil"]
+         "substitutions": ["hot honey + truffle oil"],
+         "type": "liquid"
        },
        {
          "name": "red pepper flakes",
          "quantity": 1,
          "unit": "tsp",
-         "optional": true
+         "optional": true,
+         "type": "spice"
        }
      ],
      "instructions": [

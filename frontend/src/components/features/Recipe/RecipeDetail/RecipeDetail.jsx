@@ -10,6 +10,10 @@ import './RecipeDetail.css';
 const RecipeDetail = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
+  const [drink, setDrink] = useState(null);
+  const [side, setSide] = useState(null);
+  const [sauce, setSauce] = useState(null);
+  const [seasoningBlend, setSeasoningBlended] = useState(null);
   const [audioUrl, setAudioUrl] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -114,7 +118,7 @@ const RecipeDetail = () => {
         if (data.ingredients) {
           data.ingredients = enrichIngredients(data.ingredients);
         }
-
+        console.log('Recipe:', data);
         setRecipe(data);
         setServings(data.default_servings);
       } catch (err) {
@@ -124,7 +128,119 @@ const RecipeDetail = () => {
       }
     };
 
+    const fetchDrinks = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/drinks/${id}`
+        );
+        if (!response.ok)
+          throw new Error('Failed to fetch drink details');
+        const data = await response.json();
+
+        if (!data.default_servings) {
+          data.default_servings = data.servings || 1; // Infer from servings
+        }
+
+        if (data.ingredients) {
+          data.ingredients = enrichIngredients(data.ingredients);
+        }
+        console.log('Drink:', data);
+        setDrink(data);
+        setServings(data.default_servings);
+      } catch (err) {
+        console.error('Error fetching drink:', err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchSide = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/sides/${id}`
+        );
+        if (!response.ok)
+          throw new Error('Failed to fetch side details');
+        const data = await response.json();
+
+        if (!data.default_servings) {
+          data.default_servings = data.servings || 1; // Infer from servings
+        }
+
+        if (data.ingredients) {
+          data.ingredients = enrichIngredients(data.ingredients);
+        }
+        console.log('Side:', data);
+        setSide(data);
+        setServings(data.default_servings);
+      } catch (err) {
+        console.error('Error fetching side:', err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchSauce = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/sauces/${id}`
+        );
+        if (!response.ok)
+          throw new Error('Failed to fetch sauce details');
+        const data = await response.json();
+
+        if (!data.default_servings) {
+          data.default_servings = data.servings || 1; // Infer from servings
+        }
+
+        if (data.ingredients) {
+          data.ingredients = enrichIngredients(data.ingredients);
+        }
+        console.log('Sauce:', data);
+        setSauce(data);
+        setServings(data.default_servings);
+      } catch (err) {
+        console.error('Error fetching sauce:', err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const fetchSeasoningBlend = async () => {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/seasoning_blends/${id}`
+        );
+        if (!response.ok)
+          throw new Error('Failed to fetch seasoning blend details');
+        const data = await response.json();
+
+        if (!data.default_servings) {
+          data.default_servings = data.servings || 1; // Infer from servings
+        }
+
+        if (data.ingredients) {
+          data.ingredients = enrichIngredients(data.ingredients);
+        }
+        console.log('Seasoning Blend:', data);
+        setSeasoningBlended(data);
+        setServings(data.default_servings);
+      } catch (err) {
+        console.error('Error fetching seasoning blend:', err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchRecipe();
+    fetchDrinks();
+    fetchSide();
+    fetchSauce();
+    fetchSeasoningBlend();
   }, [id]);
 
   const initializeTimers = (instructions) => {

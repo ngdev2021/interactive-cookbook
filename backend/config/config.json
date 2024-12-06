@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "cookbook_user",
+    "password": "yourpassword",
+    "database": "cookbook",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "cookbook_user",
+    "password": "yourpassword",
+    "database": "cookbook_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "cookbook_user",
+    "password": "yourpassword",
+    "database": "cookbook_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
